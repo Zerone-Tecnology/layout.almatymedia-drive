@@ -11,19 +11,171 @@
 		<!-- Meta end -->
 
 		<!-- Site description -->
-		<title>Заголовок</title>
+		<title>MediaDrive</title>
 		<meta name="description" content="" />
 		<!-- Site description end -->
 
 		<!-- Style -->
-		<link rel="stylesheet" href="./assets/scss/main.scss" />
-		<link rel="stylesheet" href="./assets/css/custom.css" />
+		<link rel="stylesheet" href="./assets/css/main.min.css" />
+		<link rel="stylesheet" href="./assets/css/custom.min.css" />
+
+		<!-- Script -->
+		<script
+			src="./assets/js/lib/jquery/jquery-3.6.0.min.js"
+			module
+			sync
+		></script>
+		<script src="./assets/js/lib/anime/anime.min.js" module sync></script>
 	</head>
 	<body>
 		<!-- main -->
-		<!-- main -->
+
+		<main>
+			<!-- Header -->
+			<header class="header-colosed">
+				<div class="container">
+					<div class="header--wrapper content-center-y">
+						<div class="header--content header--content-left">
+							<div class="btn--wrapper">
+								<button class="btn btn-icon bg-none">
+									<img src="./assets/image/icons/icon-burger.svg" />
+								</button>
+							</div>
+							<div class="logotype--wrapper">
+								<img src="./assets/image/logotype/LOGOTYPE-TEXT.svg" />
+							</div>
+						</div>
+						<div class="header--content header--content-center">
+							<ul class="menu--list color-dark">
+								<li class="menu--list-item">
+									<a href="http://">Спецпроекты</a>
+								</li>
+								<li class="menu--list-item">
+									<a href="http://">Мероприятия</a>
+								</li>
+								<li class="menu--list-item">
+									<a href="http://">Мультимедиа</a>
+								</li>
+							</ul>
+						</div>
+						<div class="header--content header--content-right">
+							<ul class="lang--list color-dark">
+								<li class="lang--list-item active">
+									<a href="http://">РУС</a>
+								</li>
+								<li class="lang--list-item">
+									<a href="http://">КАЗ</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- Content -->
+			<section class="section section--hero">
+				<div class="container"></div>
+			</section>
+			<section class="section section--search">
+				<div class="container content-center-x">
+					<h2 class="section--search-title">Рухани жаңғыру - Алматы</h2>
+					<p class="section--search-description text-center text-md">
+						MediaDrive - структурированный каталог базы данных в рамках
+						реализации программы «Рухани жаңғыру»
+					</p>
+					<p class="section--search-description text-center text-md">
+						Рухани жаңғыру – қазақстандықтардың салт-санасы мен дүниетанымын
+						өзгертетін қозғаушы күш. Елбасы Нұрcұлтан Назарбаевтың мақаласын
+						оқып шығып, осындай ой түйдім.
+					</p>
+					<form action="POST" class="form form--search">
+						<div class="form--search-row">
+							<input
+								type="text"
+								class="input"
+								placeholder="Что будем искать?"
+							/>
+							<button
+								type="submit"
+								class="
+									btn btn-icon
+									bg-none
+									position-absolute
+									position-absolute-right
+									position-absolute-center-y
+								"
+							>
+								<img src="./assets/image/icons/icon-search.svg" />
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="section section--direction">
+				<div class="container content-center-x">
+					<div class="section--content">
+						<div class="section--content-title">
+							<h3>Основные направления программы</h3>
+						</div>
+						<div class="section--content-body">
+							<div class="card--wrapper card--wrapper-row card-m-3">
+								<div class="card--item">
+									<div class="card--item-image"></div>
+									<div class="card--item-info">
+										<article>
+											<h4 class="title text-bold">Развитие личности</h4>
+											<p class="description">
+												Прагматизм, культ зананий, конкурентноспособность,
+												открытость сознания
+											</p>
+										</article>
+									</div>
+								</div>
+								<div class="card--item">
+									<div class="card--item-image"></div>
+									<div class="card--item-info">
+										<article>
+											<h4 class="title text-bold">Развитие нации</h4>
+											<p class="description">
+												Сохранение национальной идентичности
+											</p>
+										</article>
+									</div>
+								</div>
+								<div class="card--item">
+									<div class="card--item-image"></div>
+									<div class="card--item-info">
+										<article>
+											<h4 class="title text-bold">Развитие государства</h4>
+											<p class="description">
+												Эволюционное, а не революционное развитие Казахстана
+											</p>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section--mediagallery">
+				<div class="container"></div>
+			</section>
+			<section class="section section--statistics">
+				<div class="container"></div>
+			</section>
+			<section class="section section--projects">
+				<div class="container"></div>
+			</section>
+			<section class="section section--events">
+				<div class="container"></div>
+			</section>
+
+			<!-- Footer -->
+			<footer class="footer--wrapper"></footer>
+		</main>
 
 		<!-- Scripts -->
-		<script src="./assets/js/common.js" module></script>
+		<script src="./assets/js/common.js" sync></script>
 	</body>
 </html>

@@ -1,0 +1,16 @@
+.container {
+	height: 100%;
+}
+
+.section {
+	min-height: 20%;
+}
+
+.flex__wrapper {
+	display: flex;
+	flex-basis: 1;
+}
+.flex__row {
+	flex-direction: row;
+	flex-wrap: wrap;
+}

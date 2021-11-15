@@ -1,0 +1,244 @@
+// Clear default browser settings
+p {
+	margin: 0;
+}
+a {
+	color: inherit;
+	&:hover,
+	&:active {
+		color: $color-secondary;
+	}
+}
+h {
+	&1,
+	&2,
+	&3,
+	&4,
+	&5 {
+		font-weight: 700;
+		color: $color-dark;
+		margin: 0;
+	}
+	&1 {
+		font-size: $heading-1;
+		margin-bottom: $heading-1;
+	}
+	&2 {
+		font-size: $heading-2;
+		margin-bottom: $heading-2;
+	}
+	&3 {
+		font-size: $heading-3;
+		margin-bottom: $heading-3;
+	}
+	&4 {
+		font-size: $heading-4;
+		margin-bottom: $heading-4;
+	}
+	&5 {
+		font-size: $heading-5;
+		margin-bottom: $heading-5;
+	}
+}
+
+.h {
+	&-1,
+	&-2,
+	&-3,
+	&-4,
+	&-5 {
+		font-weight: 700;
+		color: $color-dark;
+		margin: 0;
+	}
+	&-1 {
+		font-size: $heading-1;
+		margin-bottom: $heading-1;
+	}
+	&-2 {
+		font-size: $heading-2;
+		margin-bottom: $heading-2;
+	}
+	&-3 {
+		font-size: $heading-3;
+		margin-bottom: $heading-3;
+	}
+	&-4 {
+		font-size: $heading-4;
+		margin-bottom: $heading-4;
+	}
+	&-5 {
+		font-size: $heading-5;
+		margin-bottom: $heading-5;
+	}
+}
+
+.text {
+	// size
+	&-xl {
+		font-size: $text-xl;
+	}
+	&-lg {
+		font-size: $text-lg;
+	}
+	&-md {
+		font-size: $text-md;
+	}
+	&-sm {
+		font-size: $text-sm;
+	}
+
+	// color
+	&-primary {
+		color: $color-primary;
+	}
+	&-secondary {
+		color: $color-secondary;
+	}
+	&-accent {
+		color: $color-accent;
+	}
+	&-red {
+		color: $color-red;
+	}
+	&-dark {
+		color: $color-dark;
+	}
+	&-white {
+		color: $color-white;
+	}
+
+	&-bold {
+		font-weight: 700;
+	}
+
+	// align
+	&-center {
+		text-align: center;
+	}
+	&-left {
+		text-align: left;
+	}
+	&-right {
+		text-align: right;
+	}
+}
+
+.bg {
+	&-none {
+		background: transparent;
+	}
+	&-primary {
+		background-color: $color-primary;
+	}
+	&-secondary {
+		background-color: $color-secondary;
+	}
+	&-accent {
+		background-color: $color-accent;
+	}
+	&-red {
+		background-color: $color-red;
+	}
+	&-gradiend {
+		&-secondary {
+			background-color: $gradient-secondary;
+		}
+		&-accent {
+			background-color: $gradient-accent;
+		}
+		&-purple {
+			background-color: $gradient-purple;
+		}
+		&-dark-1 {
+			background-color: $gradient-purple;
+		}
+		&-dark-2 {
+			background-color: $gradient-purple;
+		}
+	}
+}
+
+.container {
+	transition: width 0.7s;
+	max-width: $screen-xl;
+	height: 100%;
+
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+
+	@include media('max', 'lg') {
+		width: $screen-md;
+	}
+	@include media('max', 'md') {
+		width: $screen-sm;
+	}
+	@include media('max', 'sm') {
+		width: $screen-xs;
+	}
+	@include media('max', 'xs') {
+		width: $screen-xs;
+	}
+}
+
+.content {
+	&-center {
+		align-items: center;
+		justify-content: center;
+		&-x {
+			align-items: center;
+		}
+		&-y {
+			justify-content: center;
+		}
+	}
+	&-between {
+		justify-content: space-between;
+	}
+}
+
+input {
+	padding: $padding-input-y $padding-input-x;
+	border-radius: $radius-rounded;
+	width: 100%;
+	background: $color-gray-active;
+}
+button {
+	padding: $padding-button-y $padding-button-x;
+	border-radius: $radius-rounded;
+	cursor: pointer;
+}
+
+.position {
+	&-absolute {
+		position: absolute;
+
+		&-right {
+			right: 0;
+		}
+		&-left {
+			left: 0;
+		}
+		&-top {
+			top: 0;
+		}
+		&-bottom {
+			top: 0;
+		}
+
+		&-center {
+			&-y {
+				top: 0;
+				bottom: 0;
+				margin: auto 0;
+			}
+			&-x {
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+			}
+		}
+	}
+}

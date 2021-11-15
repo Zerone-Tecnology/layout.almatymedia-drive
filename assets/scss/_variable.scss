@@ -1,0 +1,67 @@
+$screen-xl: 1410px; // less than 1920px
+$screen-lg: 1200px; // less than $screen-max
+$screen-md: 1024px; // less than $screen-lg
+$screen-sm: 768px; // less than $screen-md
+$screen-xs: 480px; // less than $screen-sm
+
+$screen: (
+	'xs': $screen-xs,
+	'sm': $screen-sm,
+	'md': $screen-md,
+	'lg': $screen-lg,
+	'xl': $screen-xl,
+);
+
+// TEXT
+$heading-1: 420px; // h1
+$heading-2: 72px; // h2
+$heading-3: 36px; // h3
+$heading-4: 28px; // h4
+$heading-5: 20px; // h5
+
+$text-xl: 28px;
+$text-lg: 20px;
+$text-md: 18px;
+$text-sm: 14px;
+
+$text-size-1: 16px; // all text
+$text-size-2: 18px; // accent text
+
+// COLOR
+$color-primary: #1c2f53;
+$color-secondary: #319ae6;
+$color-accent: #f9a528;
+$color-red: #e03b62;
+
+$color-dark: #1c2f53;
+$color-white: #ffffff;
+
+$color-gray: #f8f9fb;
+$color-gray-active: #eff1f4;
+
+// GRADIENDT
+$gradient-secondary: inear-gradient(155.64deg, #3a82ee 12.4%, #3ac9ee 87.49%);
+$gradient-accent: linear-gradient(155.64deg, #ff9838 12.4%, #ffc738 87.49%);
+
+// SECONDARY
+$gradient-purple: linear-gradient(155.64deg, #c40fe1 12.4%, #481699 87.49%);
+$gradient-dark-1: linear-gradient(
+	180deg,
+	#1c2f53 76.04%,
+	rgba(255, 255, 255, 0) 100%
+);
+$gradient-dark-2: linear-gradient(
+	180deg,
+	#1c2f53 76.04%,
+	rgba(255, 255, 255, 0) 100%
+);
+
+// component sizes
+$radius-rounded: 60px;
+$radius-rounded-card: 8px;
+
+$padding-input-y: 18px;
+$padding-input-x: 21px;
+
+$padding-button-y: 16px;
+$padding-button-x: 30px;

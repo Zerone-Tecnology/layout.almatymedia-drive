@@ -1,9 +1,14 @@
 html,
-body {
+body,
+main {
 	margin: 0;
 	padding: 0;
-	font-size: $text-size-1;
+	height: 100%;
+	width: 100%;
+	font-family: 'Montserrat';
+	font-weight: 400;
 }
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -21,9 +26,12 @@ a {
 input,
 button {
 	outline: none;
+	border: none;
+	box-sizing: content-box;
 	&:active,
 	&:focus,
 	&:hover {
 		outline: none;
+		border: none;
 	}
 }

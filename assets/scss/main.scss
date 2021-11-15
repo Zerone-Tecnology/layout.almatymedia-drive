@@ -1,14 +1,21 @@
 // fonts
-@import './__font.scss';
+@import './font';
 
 // settings
-@import './__variable.scss';
-@import './__mixin.scss';
+@import './clear';
+@import './variable';
+@import './mixin';
+@import './settings';
 
 // components
-@import './components/__buttons.scss';
-@import './components/__card.scss';
-@import './components/__form.scss';
-@import './components/__navigation.scss';
-@import './components/__news.scss';
-@import './components/__section.scss';
+@import './components/header';
+@import './components/icon';
+@import './components/button';
+@import './components/card';
+@import './components/form';
+@import './components/navigation';
+@import './components/news';
+@import './components/section';
+
+// pages
+@import './pages/mainpage';
