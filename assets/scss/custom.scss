@@ -14,3 +14,13 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+
+.track {
+	fill: none;
+	stroke: black;
+	stroke-width: 20;
+}
+
+.round {
+	stroke-linejoin: round;
+}
