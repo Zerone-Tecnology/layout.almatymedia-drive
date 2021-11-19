@@ -1,0 +1,26 @@
+.btn {
+	width: 330px;
+	padding: 20px 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: $text-md;
+	font-weight: 500;
+
+	&-primary {
+		color: $color-white;
+		background-color: $color-secondary;
+	}
+	&-white {
+		color: $color-primary;
+		background-color: $color-white;
+		filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));
+	}
+
+	&-icon {
+		padding: 18px;
+		max-width: 18px;
+	}
+}

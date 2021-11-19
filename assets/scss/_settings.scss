@@ -9,6 +9,11 @@ a {
 		color: $color-secondary;
 	}
 }
+
+input {
+	font-size: $text-md;
+}
+
 h {
 	&1,
 	&2,
@@ -161,7 +166,7 @@ h {
 
 .container {
 	transition: width 0.7s;
-	max-width: $screen-xl;
+	width: $screen-xl;
 	height: 100%;
 
 	margin: 0 auto;
@@ -180,6 +185,55 @@ h {
 	}
 	@include media('max', 'xs') {
 		width: $screen-xs;
+	}
+}
+
+.flex {
+	&--container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&--row {
+		max-width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		row-gap: 60px;
+		column-gap: 30px;
+	}
+
+	&--col {
+		display: flex;
+		flex-direction: column;
+		&.col {
+			&-3 {
+				flex: 30%;
+				max-width: calc(100% / 3);
+			}
+			&-4 {
+				flex: 30%;
+				max-width: calc(100% / 4);
+			}
+		}
+	}
+
+	&--inline {
+		display: inline-flex;
+		flex-direction: row;
+		max-width: 100%;
+		flex-wrap: wrap;
+		column-gap: 60px;
+		align-items: center;
+
+		&-min {
+			column-gap: 20px;
+		}
+	}
+
+	&--vertical {
+		&-center {
+			justify-content: center;
+		}
 	}
 }
 
