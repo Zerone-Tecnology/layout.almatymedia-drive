@@ -797,6 +797,206 @@ header .header--content-right .lang--list {
   margin-bottom: 0;
 }
 
+.section--statistics .element {
+  position: absolute;
+  border-radius: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.section--statistics .element--wrapper {
+  height: 1200px;
+  width: calc(100%-2px);
+  position: relative;
+}
+
+.section--statistics .element .f-element {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section--statistics .element--center-main {
+  border-radius: 0;
+  width: 380px;
+  height: 380px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section--statistics .element--center-main .f-element {
+  width: 380px;
+  height: 380px;
+  margin: auto;
+  -webkit-box-shadow: 0px 8px 70px rgba(148, 165, 208, 0.25);
+          box-shadow: 0px 8px 70px rgba(148, 165, 208, 0.25);
+}
+
+.section--statistics .element--center-secondary {
+  width: 724px;
+  height: 724px;
+  margin: auto;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  border: 1px solid #eee;
+  z-index: 100;
+}
+
+.section--statistics .element--center-secondary .f-element {
+  z-index: 200;
+  -webkit-box-shadow: 0px 8px 70px rgba(148, 165, 208, 0.25);
+          box-shadow: 0px 8px 70px rgba(148, 165, 208, 0.25);
+  width: 180px;
+  height: 180px;
+  left: -90px;
+  top: -90px;
+}
+
+.section--statistics .element--center-secondary.secondary-1 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.section--statistics .element--center-secondary.secondary-1 .f-element {
+  -webkit-transform: rotate(calc(360deg + 180deg));
+          transform: rotate(calc(360deg + 180deg));
+}
+
+.section--statistics .element--center-secondary.secondary-2 {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.section--statistics .element--center-secondary.secondary-3 {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.section--statistics .element--center-secondary.secondary-3 .f-element {
+  -webkit-transform: rotate(calc(360deg - 40deg));
+          transform: rotate(calc(360deg - 40deg));
+}
+
+.section--statistics .element--left-lite, .section--statistics .element--right-lite {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.section--statistics .element--left-lite .f-element, .section--statistics .element--right-lite .f-element {
+  width: 100%;
+  height: 100%;
+}
+
+.section--statistics .element--left-lite .f-element img, .section--statistics .element--right-lite .f-element img {
+  max-width: 100%;
+  height: auto;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.section--statistics .element--left-1 {
+  left: 180px;
+  top: 76px;
+}
+
+.section--statistics .element--left-2 {
+  left: 162px;
+  top: 210px;
+}
+
+.section--statistics .element--left-3 {
+  left: 30px;
+  top: 256px;
+}
+
+.section--statistics .element--left-4 {
+  left: 112px;
+  top: 372px;
+}
+
+.section--statistics .element--left-5 {
+  left: 0px;
+  top: 455px;
+}
+
+.section--statistics .element--left-6 {
+  left: 112px;
+  top: 542px;
+}
+
+.section--statistics .element--left-7 {
+  left: 30px;
+  top: 652px;
+}
+
+.section--statistics .element--left-8 {
+  left: 162px;
+  top: 700px;
+}
+
+.section--statistics .element--left-9 {
+  left: 118px;
+  top: 832px;
+}
+
+.section--statistics .element--right-1 {
+  left: calc(100% - 180px - 80px);
+  top: 76px;
+}
+
+.section--statistics .element--right-2 {
+  left: calc(100% - 162px - 80px);
+  top: 210px;
+}
+
+.section--statistics .element--right-3 {
+  left: calc(100% - 30px - 80px);
+  top: 256px;
+}
+
+.section--statistics .element--right-4 {
+  left: calc(100% - 112px - 80px);
+  top: 372px;
+}
+
+.section--statistics .element--right-5 {
+  left: calc(100% - 0px - 80px);
+  top: 455px;
+}
+
+.section--statistics .element--right-6 {
+  left: calc(100% - 112px - 80px);
+  top: 542px;
+}
+
+.section--statistics .element--right-7 {
+  left: calc(100% - 30px - 80px);
+  top: 652px;
+}
+
+.section--statistics .element--right-8 {
+  left: calc(100% - 162px - 80px);
+  top: 700px;
+}
+
+.section--statistics .element--right-9 {
+  left: calc(100% - 118px - 80px);
+  top: 832px;
+}
+
 .section--content {
   min-width: 100%;
 }
