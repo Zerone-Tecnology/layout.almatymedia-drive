@@ -161,6 +161,17 @@
 							height: auto;
 							object-position: center;
 						}
+
+						&::after {
+							content: '';
+							position: absolute;
+							height: 2px;
+							width: 611px;
+							background: #000;
+							left: 40px;
+							transform-origin: left center;
+							transform: rotate(46deg);
+						}
 					}
 				}
 			}
