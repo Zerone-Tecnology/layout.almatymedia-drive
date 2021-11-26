@@ -2,3 +2,205 @@
   width: 1440px;
   margin: 0 auto;
 }
+
+.test .element-circle {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 600px;
+  width: 600px;
+  margin: auto auto;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.test .element-circle-1, .test .element-circle-2, .test .element-circle-3 {
+  height: 420px;
+  width: 420px;
+}
+
+.test .element-circle-1 {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.test .element-circle-2 {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.test .element-circle-3 {
+  -webkit-transform: rotate(200deg);
+          transform: rotate(200deg);
+}
+
+.test .element-circle-4 {
+  border-radius: 50%;
+  border: 1px dashed #000;
+  z-index: 0;
+}
+
+.test .element-circle .circle--content {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px dashed #d430a3;
+  background-color: #eee;
+}
+
+.test .element-circle .circle--content-lite {
+  width: 180px;
+  height: 180px;
+  top: -90px;
+  left: -90px;
+}
+
+.test .element-circle .circle--content-big {
+  width: 360px;
+  height: 360px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto auto;
+}
+
+.test .icon--wrapper {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 914px;
+  width: 914px;
+  margin: auto auto;
+}
+
+.test .icon--position-left, .test .icon--position-right {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.test .icon--position-left::before, .test .icon--position-right::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 70%;
+  background-color: #fcef3a;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.test .icon--position-left:nth-of-type(2n) {
+  height: 724px;
+  width: 724px;
+}
+
+.test .icon--position-left-1 {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.test .icon--position-left-2 {
+  -webkit-transform: rotate(350deg);
+          transform: rotate(350deg);
+}
+
+.test .icon--position-left-3 {
+  -webkit-transform: rotate(338deg);
+          transform: rotate(338deg);
+}
+
+.test .icon--position-left-4 {
+  -webkit-transform: rotate(330deg);
+          transform: rotate(330deg);
+}
+
+.test .icon--position-left-5 {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+
+.test .icon--position-left-6 {
+  -webkit-transform: rotate(300deg);
+          transform: rotate(300deg);
+}
+
+.test .icon--position-left-7 {
+  -webkit-transform: rotate(292deg);
+          transform: rotate(292deg);
+}
+
+.test .icon--position-left-8 {
+  -webkit-transform: rotate(280deg);
+          transform: rotate(280deg);
+}
+
+.test .icon--position-left-9 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.test .icon--position-right:nth-of-type(2n-9) {
+  height: 724px;
+  width: 724px;
+}
+
+.test .icon--position-right-1 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.test .icon--position-right-2 {
+  -webkit-transform: rotate(100deg);
+          transform: rotate(100deg);
+}
+
+.test .icon--position-right-3 {
+  -webkit-transform: rotate(112deg);
+          transform: rotate(112deg);
+}
+
+.test .icon--position-right-4 {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.test .icon--position-right-5 {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.test .icon--position-right-6 {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+
+.test .icon--position-right-7 {
+  -webkit-transform: rotate(158deg);
+          transform: rotate(158deg);
+}
+
+.test .icon--position-right-8 {
+  -webkit-transform: rotate(170deg);
+          transform: rotate(170deg);
+}
+
+.test .icon--position-right-9 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.test .icon--element {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 80px;
+  height: 80px;
+  background-color: #30234d;
+}

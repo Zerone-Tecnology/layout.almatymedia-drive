@@ -907,6 +907,19 @@ header .header--content-right .lang--list {
      object-position: center;
 }
 
+.section--statistics .element--left-lite .f-element::after, .section--statistics .element--right-lite .f-element::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 611px;
+  background: #000;
+  left: 40px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transform: rotate(46deg);
+          transform: rotate(46deg);
+}
+
 .section--statistics .element--left-1 {
   left: 180px;
   top: 76px;
