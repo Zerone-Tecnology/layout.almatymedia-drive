@@ -11,7 +11,7 @@
 
 // shadow
 @mixin shadow-v1() {
-	box-shadow: 0px 8px 70px rgba(148, 165, 208, 0.25);
+	box-shadow: 0px 8px 45px rgba(148, 165, 208, 0.25);
 }
 @mixin shadow-v2() {
 	filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));

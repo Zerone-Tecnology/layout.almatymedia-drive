@@ -1,21 +1,13 @@
 // fonts
 @import './font';
 
-// settings
 @import './clear';
 @import './variable';
 @import './mixin';
 @import './settings';
 
-// components
-@import './components/header';
-@import './components/icon';
 @import './components/button';
-@import './components/card';
-@import './components/form';
-@import './components/navigation';
-@import './components/news';
-@import './components/section';
 
-// pages
+@import './components/header';
+
 @import './pages/mainpage';
