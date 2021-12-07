@@ -1,96 +1,72 @@
-header {
+header,
+.header {
 	width: 100%;
-	height: fit-content;
-	z-index: 800;
 	position: fixed;
+	z-index: 1000;
 
-	.header {
-		&--wrapper {
-			background: $color-white;
-			box-shadow: 0px 6px 12px rgba(148, 165, 208, 0.15);
-			border-radius: 0px 0px 12px 12px;
-			padding: 38px 52px;
+	&--wrapper {
+		width: 100%;
+		padding: 32px 58px;
+		border-radius: 0 0 12px 12px;
+		background-color: $color-white;
+		@include shadow-v1();
+	}
 
-			display: flex;
-			flex-direction: row;
+	&--block {
+		&-left,
+		&-center,
+		&-right {
+			display: inline-flex;
+			align-items: center;
 		}
 
-		&--content {
-			display: flex;
-			flex: calc(100% / 3);
+		&-left {
+			column-gap: 50px;
+		}
+		&-center {
+			justify-content: center;
+		}
+		&-right {
+			justify-content: end;
+		}
+	}
 
-			&-left,
-			&-center,
-			&-right {
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				transition: width 0.4s;
-			}
-			&-left {
-				.logotype {
-					&--wrapper {
-						max-height: 70px;
-					}
-				}
-			}
-			&-center {
-				.menu {
-					&--list {
-						margin-left: auto;
-						margin-right: auto;
-					}
-				}
-			}
-			&-right {
-				.lang {
-					&--list {
-						margin-left: auto;
-					}
-				}
+	.menu {
+		&--list {
+			display: inline-flex;
+			align-items: center;
+			column-gap: 50px;
+		}
+		&--item {
+			&:hover,
+			&.active {
+				color: $color-secondary;
 			}
 		}
 	}
-}
-
-.menu {
-	&--list {
-		display: flex;
-		flex-direction: row;
-		height: fit-content;
-		&-item {
-			margin-right: 50px;
-			&:last-of-type {
-				margin-right: 0;
-			}
+	.lang {
+		&--list {
+			display: inline-flex;
+			align-items: center;
+			column-gap: 16px;
 		}
-	}
-}
-
-.lang {
-	&--list {
-		display: flex;
-		flex-direction: row;
-		&-item {
-			margin-right: 16px;
-			padding: 8px 10px;
+		&--item {
+			padding: 6px 10px;
+			background: transparent;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 
 			border-radius: $radius-rounded;
 
-			color: $color-dark;
-			&.active {
-				background: $color-secondary;
-
+			&-active {
+				color: $color-white;
+				background-color: $color-secondary;
 				a {
-					color: $color-white;
 					&:hover {
 						color: $color-white;
 					}
 				}
-			}
-
-			&:last-of-type {
-				margin-right: 0;
 			}
 		}
 	}

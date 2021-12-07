@@ -1,10 +1,18 @@
 .form {
 	&--search {
-		&-row {
-			position: relative;
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
+		.input {
+			&--wrapper {
+				position: relative;
+			}
+			&--fbtn {
+				.btn {
+					position: absolute;
+					right: 8px;
+					top: 0;
+					bottom: 0;
+					margin: auto 0;
+				}
+			}
 		}
 	}
 }

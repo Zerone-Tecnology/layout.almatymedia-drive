@@ -1,27 +1,32 @@
 .card {
 	&--item {
-		position: relative;
-		max-width: 450px;
-		height: fill-available;
-		background: $color-white;
-	}
-	&--with {
-		&--image {
+		&-image {
+			svg {
+				&:first-of-type {
+					width: 100%;
+					height: fit-content;
+					max-width: 100%;
+					max-height: fit-content;
+				}
+			}
+		}
+
+		&-info {
 			position: relative;
-			width: 100%;
-			image {
-				image-rendering: -webkit-optimize-contrast;
+			padding: 56px;
+			border-radius: $radius-rounded-card;
+			background-color: $color-white;
+			@include shadow-v1;
+
+			* {
+				box-sizing: border-box;
 			}
 
-			.card {
-				&--info {
-					min-height: 248px;
-					padding: 0 60px;
-					article {
-						margin: 60px auto 60px 0;
-						.title {
-							width: 340px;
-							word-break: keep-all;
+			&:hover {
+				.card {
+					&--description {
+						&-more {
+							display: block;
 						}
 					}
 				}
@@ -29,35 +34,50 @@
 		}
 	}
 
-	&--info {
-		position: relative;
-		display: flex;
-		border-radius: $radius-rounded-card;
-		@include shadow-v1();
-
-		article {
-			display: flex;
-			flex-direction: column;
-			text-align: start;
+	&--title {
+		background: $gradient-dark-1;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		h3,
+		h4 {
+			max-height: 90px;
+			overflow-y: hidden;
 		}
-		.link {
-			&--goto {
-				position: absolute;
-				right: 0;
-				bottom: 0;
-				display: flex;
-				pointer-events: none;
-				opacity: 0;
-				transition: all 0.2s;
-			}
-		}
-		&:hover {
-			.link {
-				&--goto {
-					pointer-events: all;
-					opacity: 1;
+	}
+	&--description {
+		&-more {
+			display: none;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			height: 150px;
+			max-height: 150px;
+			max-width: fit-content;
+			cursor: pointer;
+			img {
+				&:first-of-type {
+					height: 100%;
 				}
 			}
 		}
+
+		&-inline {
+			margin-top: 16px;
+			display: inline-flex;
+			align-items: center;
+			column-gap: 40px;
+
+			span {
+				vertical-align: center;
+			}
+		}
+	}
+
+	&--links {
+		display: flex;
+		flex-direction: row;
+		column-gap: 30px;
+		justify-content: flex-end;
+		align-items: center;
 	}
 }

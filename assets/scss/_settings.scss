@@ -163,93 +163,19 @@ h {
 		}
 	}
 }
-
 .container {
-	transition: width 0.7s;
-	width: $screen-xl;
-	height: 100%;
+	transition: all 0.7s;
 
-	margin: 0 auto;
+	max-width: $screen-xl;
 
-	display: flex;
-	flex-direction: column;
-
-	@include media('max', 'lg') {
-		width: $screen-md;
+	@media (max-width: $screen-xl) {
+		max-width: $screen-md;
 	}
-	@include media('max', 'md') {
-		width: $screen-sm;
+	@media (max-width: $screen-md) {
+		max-width: $screen-sm;
 	}
-	@include media('max', 'sm') {
-		width: $screen-xs;
-	}
-	@include media('max', 'xs') {
-		width: $screen-xs;
-	}
-}
-
-.flex {
-	&--container {
-		display: flex;
-		flex-direction: column;
-	}
-
-	&--row {
-		max-width: 100%;
-		flex-direction: row;
-		flex-wrap: wrap;
-		row-gap: 60px;
-		column-gap: 30px;
-	}
-
-	&--col {
-		display: flex;
-		flex-direction: column;
-		&.col {
-			&-3 {
-				flex: 30%;
-				max-width: calc(100% / 3);
-			}
-			&-4 {
-				flex: 30%;
-				max-width: calc(100% / 4);
-			}
-		}
-	}
-
-	&--inline {
-		display: inline-flex;
-		flex-direction: row;
-		max-width: 100%;
-		flex-wrap: wrap;
-		column-gap: 60px;
-		align-items: center;
-
-		&-min {
-			column-gap: 20px;
-		}
-	}
-
-	&--vertical {
-		&-center {
-			justify-content: center;
-		}
-	}
-}
-
-.content {
-	&-center {
-		align-items: center;
-		justify-content: center;
-		&-x {
-			align-items: center;
-		}
-		&-y {
-			justify-content: center;
-		}
-	}
-	&-between {
-		justify-content: space-between;
+	@media (max-width: $screen-sm) {
+		max-width: $screen-xs;
 	}
 }
 
@@ -265,34 +191,9 @@ button {
 	cursor: pointer;
 }
 
-.position {
-	&-absolute {
-		position: absolute;
-
-		&-right {
-			right: 0;
-		}
-		&-left {
-			left: 0;
-		}
-		&-top {
-			top: 0;
-		}
-		&-bottom {
-			top: 0;
-		}
-
-		&-center {
-			&-y {
-				top: 0;
-				bottom: 0;
-				margin: auto 0;
-			}
-			&-x {
-				left: 0;
-				right: 0;
-				margin: 0 auto;
-			}
-		}
+.gap {
+	&-30 {
+		row-gap: 30px;
+		column-gap: 30px;
 	}
 }
