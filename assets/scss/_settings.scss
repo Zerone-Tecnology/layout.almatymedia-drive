@@ -163,9 +163,20 @@ h {
 		}
 	}
 }
-
 .container {
-	transition: width 0.7s;
+	transition: all 0.7s;
+
+	max-width: $screen-xl;
+
+	@media (max-width: $screen-xl) {
+		max-width: $screen-md;
+	}
+	@media (max-width: $screen-md) {
+		max-width: $screen-sm;
+	}
+	@media (max-width: $screen-sm) {
+		max-width: $screen-xs;
+	}
 }
 
 input {
@@ -178,4 +189,11 @@ button {
 	padding: $padding-button-y $padding-button-x;
 	border-radius: $radius-rounded;
 	cursor: pointer;
+}
+
+.gap {
+	&-30 {
+		row-gap: 30px;
+		column-gap: 30px;
+	}
 }

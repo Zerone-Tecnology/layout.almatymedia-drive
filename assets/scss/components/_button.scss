@@ -1,11 +1,75 @@
 .btn {
+	margin: 0;
+	padding: 16px 32px;
+	font-weight: 500;
+	border-radius: $radius-rounded;
+	box-sizing: border-box;
+	cursor: pointer;
+
+	&--wrapper {
+		display: flex;
+		width: auto;
+	}
+	&--inline {
+		display: inline-flex;
+	}
+	&-inline {
+		column-gap: 30px;
+	}
 	&-icon {
 		padding: 0;
-		width: 54px;
-		height: 54px;
+		max-width: 54px;
+		max-height: 54px;
+
+		&-standart {
+			width: 54px;
+			height: 54px;
+		}
+
 		svg {
 			width: 100%;
 			height: auto;
+		}
+	}
+
+	&-white {
+		background-color: $color-white;
+		@include shadow-v1();
+	}
+
+	// icons
+	&--arrow {
+		&-left,
+		&-right {
+			width: 60px;
+			height: 60px;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			background-color: $color-white;
+			border-radius: 50px;
+
+			@include shadow-v1();
+		}
+	}
+
+	&-dot {
+		padding: 0;
+		width: 20px;
+		max-width: 20px;
+		height: 20px;
+		border-radius: 50px;
+		background-color: #c0c5d2;
+		margin: auto 0;
+
+		&-collection {
+			column-gap: 18px;
+		}
+
+		&.active {
+			background-color: #595e6a;
 		}
 	}
 }
