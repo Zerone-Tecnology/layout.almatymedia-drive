@@ -27,18 +27,4 @@ footer {
 			margin-bottom: 86px;
 		}
 	}
-	.socials {
-		&--wrapper {
-			margin-bottom: 54px;
-			.btn {
-				&--inline {
-					column-gap: 36px;
-				}
-				&-icon {
-					width: fit-content;
-					height: auto;
-				}
-			}
-		}
-	}
 }

@@ -10,7 +10,15 @@ section {
 
 			background-color: $color-white;
 			@include shadow-v1();
+			.container {
+				position: relative;
 
+				.ruh--logotype {
+					top: 176px;
+					max-height: 70px;
+					opacity: 0.8;
+				}
+			}
 			.hero {
 				&--image {
 					width: auto;

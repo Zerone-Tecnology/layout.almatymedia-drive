@@ -71,3 +71,66 @@ header,
 		}
 	}
 }
+
+// megamenu
+.megamenu {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	min-height: 100vh;
+	box-sizing: border-box;
+	padding-top: 204px;
+	background-color: #fcfcfc;
+
+	display: none;
+	&-closed {
+		display: none;
+	}
+	&-shown {
+		display: block;
+		z-index: 900;
+	}
+
+	&--wrapper {
+		position: relative;
+		min-height: 80%;
+	}
+
+	&--socials {
+		margin-top: 100px;
+	}
+
+	&--list {
+		&-main {
+			font-size: 28px;
+			font-weight: 500;
+			li {
+				margin-bottom: 21px;
+				&.active {
+					color: $color-secondary;
+				}
+			}
+		}
+
+		&-secondary {
+			max-width: 400px;
+			font-size: 18px;
+			li {
+				margin-bottom: 21px;
+				&:first-of-type {
+					font-weight: 700;
+					font-size: 20px;
+					margin-bottom: 43px;
+				}
+			}
+		}
+	}
+}
+
+.ruh--logotype {
+	position: absolute;
+	right: 0;
+	top: -31px;
+	mix-blend-mode: multiply;
+}

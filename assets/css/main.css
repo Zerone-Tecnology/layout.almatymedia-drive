@@ -343,6 +343,31 @@ button {
           column-gap: 30px;
 }
 
+.socials--wrapper {
+  margin-bottom: 54px;
+}
+
+.btn--inline {
+  -webkit-column-gap: 36px;
+          column-gap: 36px;
+}
+
+.btn-icon {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .btn {
   margin: 0;
   padding: 16px 32px;
@@ -722,6 +747,72 @@ header .lang--item-active a:hover,
   color: #ffffff;
 }
 
+.megamenu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 204px;
+  background-color: #fcfcfc;
+  display: none;
+}
+
+.megamenu-closed {
+  display: none;
+}
+
+.megamenu-shown {
+  display: block;
+  z-index: 900;
+}
+
+.megamenu--wrapper {
+  position: relative;
+  min-height: 80%;
+}
+
+.megamenu--socials {
+  margin-top: 100px;
+}
+
+.megamenu--list-main {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.megamenu--list-main li {
+  margin-bottom: 21px;
+}
+
+.megamenu--list-main li.active {
+  color: #319ae6;
+}
+
+.megamenu--list-secondary {
+  max-width: 400px;
+  font-size: 18px;
+}
+
+.megamenu--list-secondary li {
+  margin-bottom: 21px;
+}
+
+.megamenu--list-secondary li:first-of-type {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 43px;
+}
+
+.ruh--logotype {
+  position: absolute;
+  right: 0;
+  top: -31px;
+  mix-blend-mode: multiply;
+}
+
 footer {
   padding: 90px 0 80px 0;
   background-color: #ffffff;
@@ -750,22 +841,6 @@ footer .logo--wrapper {
   margin-bottom: 86px;
 }
 
-footer .socials--wrapper {
-  margin-bottom: 54px;
-}
-
-footer .socials--wrapper .btn--inline {
-  -webkit-column-gap: 36px;
-          column-gap: 36px;
-}
-
-footer .socials--wrapper .btn-icon {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: auto;
-}
-
 section {
   min-height: 768px;
   margin-bottom: 110px;
@@ -779,6 +854,16 @@ section.section-hero {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 8px 45px rgba(148, 165, 208, 0.25);
           box-shadow: 0px 8px 45px rgba(148, 165, 208, 0.25);
+}
+
+section.section-hero .container {
+  position: relative;
+}
+
+section.section-hero .container .ruh--logotype {
+  top: 176px;
+  max-height: 70px;
+  opacity: 0.8;
 }
 
 section.section-hero .hero--image {
