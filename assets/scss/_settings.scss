@@ -214,3 +214,11 @@ button {
 		column-gap: 30px;
 	}
 }
+
+.m {
+	&b {
+		&-6 {
+			margin-bottom: 60px;
+		}
+	}
+}

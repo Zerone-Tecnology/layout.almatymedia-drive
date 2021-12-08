@@ -55,6 +55,20 @@
 		}
 	}
 
+	&--circle {
+		width: 60px;
+		height: 60px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		background-color: $color-white;
+		border-radius: 50px;
+
+		@include shadow-v1();
+	}
+
 	&-dot {
 		padding: 0;
 		width: 20px;
@@ -70,6 +84,13 @@
 
 		&.active {
 			background-color: #595e6a;
+		}
+	}
+	&--list {
+		&-wrapper {
+			position: relative;
+			width: fit-content;
+			padding: 0 32px;
 		}
 	}
 }
