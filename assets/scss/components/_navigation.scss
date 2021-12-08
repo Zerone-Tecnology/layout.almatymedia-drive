@@ -36,3 +36,19 @@
 		}
 	}
 }
+
+.breadcrumbs {
+	position: relative;
+	&-list {
+		display: flex;
+		flex-direction: row;
+		column-gap: 32px;
+	}
+
+	&-item {
+		opacity: 0.4;
+		&.active {
+			opacity: 1;
+		}
+	}
+}

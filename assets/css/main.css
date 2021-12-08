@@ -592,6 +592,30 @@ button {
           box-shadow: 0px 8px 45px rgba(148, 165, 208, 0.25);
 }
 
+.breadcrumbs {
+  position: relative;
+}
+
+.breadcrumbs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
+}
+
+.breadcrumbs-item {
+  opacity: 0.4;
+}
+
+.breadcrumbs-item.active {
+  opacity: 1;
+}
+
 header,
 .header {
   width: 100%;
@@ -1183,4 +1207,9 @@ section .section--content {
 
 section .btn-inline {
   margin-top: 60px;
+}
+
+.page {
+  min-height: 40vh;
+  padding-top: 204px;
 }
