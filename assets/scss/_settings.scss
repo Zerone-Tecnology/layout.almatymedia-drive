@@ -1,4 +1,7 @@
 // Clear default browser settings
+* {
+	color: $color-dark;
+}
 p {
 	margin: 0;
 }
@@ -9,9 +12,23 @@ a {
 		color: $color-secondary;
 	}
 }
+span {
+	color: inherit;
+}
 
 input {
 	font-size: $text-md;
+}
+
+blockquote {
+	margin: 0 0 52px 0;
+	padding: 40px 44px 40px 40px;
+	font-size: $heading-5;
+	font-weight: 700;
+	border-radius: 8px;
+	background-color: $color-white;
+	box-sizing: border-box;
+	@include shadow-v2();
 }
 
 h {

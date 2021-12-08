@@ -1,4 +1,32 @@
 .page {
 	min-height: 40vh;
 	padding-top: 204px;
+
+	&--content {
+		&-top {
+			.form {
+				&--search {
+					input {
+						width: 330px;
+					}
+				}
+			}
+
+			margin-bottom: 72px;
+		}
+
+		&-text {
+			font-size: 18px;
+			margin-top: 110px;
+
+			p {
+				margin-bottom: 44px;
+				line-height: 29px;
+			}
+		}
+	}
+
+	&--title {
+		margin: 0;
+	}
 }
