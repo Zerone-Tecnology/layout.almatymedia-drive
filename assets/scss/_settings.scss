@@ -212,6 +212,9 @@ button {
 	&-30 {
 		row-gap: 30px;
 		column-gap: 30px;
+		&-row {
+			row-gap: 30px;
+		}
 	}
 }
 

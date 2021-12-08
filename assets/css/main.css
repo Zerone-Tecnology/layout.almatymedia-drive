@@ -364,6 +364,10 @@ button {
           column-gap: 30px;
 }
 
+.gap-30-row {
+  row-gap: 30px;
+}
+
 .mb-6 {
   margin-bottom: 60px;
 }
