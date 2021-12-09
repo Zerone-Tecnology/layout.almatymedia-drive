@@ -313,3 +313,28 @@
 		<script src="./assets/js/common.js" sync></script>
 	</body>
 </html>
+
+
+var startDate = new Date(2013, 12, 3);
+                    var endDate = new Date();
+                    var timeDiff = Math.abs(endDate.getTime() - startDate.getTime());
+                    var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+                    
+                    var fromDate = new Date(2013, 12, 3);
+                    var toDate = new Date();
+                    
+                    $("#slider-range").slider({
+                        range: true,
+                        min: new Date('2020.09.31').getTime() / 1000,
+						max: new Date('2022.02.31').getTime() / 1000,
+                        animate: true,
+                        slide: function (event, ui) {
+                            fromDate.setDate(startDate.getDate() + ui.values[0]);
+                            toDate.setDate(startDate.getDate() + ui.values[1]);
+                            
+                            $("#amount-1").val(fromDate.getFullYear() + " " + (fromDate.getMonth() + 1) + " " + fromDate.getDate());
+                            $("#amount-2").val(toDate.getFullYear() + " " + (toDate.getMonth() + 1) + " " + toDate.getDate());
+                        }
+                    });
+					$( "#amount-1" ).val( (new Date($( "#slider-range" ).slider( "values", 0 )*1000)).toDateString());
+                    $( "#amount-2" ).val( (new Date($( "#slider-range" ).slider( "values", 1 )*1000)).toDateString());
