@@ -150,6 +150,7 @@ input {
   font-size: 18px;
 }
 
+q,
 blockquote {
   margin: 0 0 52px 0;
   padding: 40px 44px 40px 40px;
@@ -368,8 +369,35 @@ button {
   row-gap: 30px;
 }
 
+.gap-col-20 {
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.mt-5 {
+  margin-top: 52px;
+}
+
+.mt-6 {
+  margin-top: 60px;
+}
+
 .mb-6 {
   margin-bottom: 60px;
+}
+
+.shadow--disabled {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  -webkit-filter: none !important;
+          filter: none !important;
+}
+
+.shadow--disabled * {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  -webkit-filter: none !important;
+          filter: none !important;
 }
 
 .socials--wrapper {
@@ -412,6 +440,13 @@ button {
   display: -ms-flexbox;
   display: flex;
   width: auto;
+  font-weight: 500;
+}
+
+.btn--wrapper-complex {
+  background-color: #eff1f4;
+  border-radius: 60px;
+  padding-right: 32px;
 }
 
 .btn--inline {
@@ -443,8 +478,8 @@ button {
 
 .btn-white {
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 8px 45px rgba(148, 165, 208, 0.25);
-          box-shadow: 0px 8px 45px rgba(148, 165, 208, 0.25);
+  -webkit-filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));
+          filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));
 }
 
 .btn--arrow-left, .btn--arrow-right {
@@ -461,8 +496,8 @@ button {
           align-items: center;
   background-color: #ffffff;
   border-radius: 50px;
-  -webkit-box-shadow: 0px 8px 45px rgba(148, 165, 208, 0.25);
-          box-shadow: 0px 8px 45px rgba(148, 165, 208, 0.25);
+  -webkit-filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));
+          filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));
 }
 
 .btn--circle {
@@ -479,8 +514,8 @@ button {
           align-items: center;
   background-color: #ffffff;
   border-radius: 50px;
-  -webkit-box-shadow: 0px 8px 45px rgba(148, 165, 208, 0.25);
-          box-shadow: 0px 8px 45px rgba(148, 165, 208, 0.25);
+  -webkit-filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));
+          filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));
 }
 
 .btn-dot {
@@ -508,6 +543,17 @@ button {
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 32px;
+}
+
+.btn-w-60 {
+  width: 60px;
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.btn-w-60 img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .form--search .input--wrapper {
@@ -549,8 +595,8 @@ button {
   padding: 56px;
   border-radius: 8px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 8px 45px rgba(148, 165, 208, 0.25);
-          box-shadow: 0px 8px 45px rgba(148, 165, 208, 0.25);
+  -webkit-filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));
+          filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));
 }
 
 .card--item-info * {
@@ -1408,6 +1454,8 @@ section.section-statistic .icon--element {
 section.section-statistic .icon--element img {
   -webkit-transform-origin: center;
           transform-origin: center;
+  -webkit-filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));
+          filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));
 }
 
 section .section--title {
@@ -1449,6 +1497,28 @@ section .btn-inline {
 .page--content-text p {
   margin-bottom: 44px;
   line-height: 29px;
+}
+
+.page--content-text ul {
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+}
+
+.page--content-text ul li {
+  margin-bottom: 29px;
+  list-style-type: disc;
+}
+
+.page--content-text ul li:before {
+  font-weight: 400;
+}
+
+.page--content-text img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 44px;
+  border-radius: 8px;
 }
 
 .page--title {

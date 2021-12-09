@@ -360,6 +360,7 @@ section {
 
 					img {
 						transform-origin: center;
+						@include shadow-v2();
 					}
 				}
 			}

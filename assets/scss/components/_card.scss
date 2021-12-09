@@ -20,7 +20,7 @@
 			padding: 56px;
 			border-radius: $radius-rounded-card;
 			background-color: $color-white;
-			@include shadow-v1;
+			@include shadow-v2;
 
 			* {
 				box-sizing: border-box;

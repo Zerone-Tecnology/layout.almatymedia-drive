@@ -24,6 +24,25 @@
 				margin-bottom: 44px;
 				line-height: 29px;
 			}
+
+			ul {
+				padding-inline-start: 40px;
+				li {
+					margin-bottom: 29px;
+					list-style-type: disc;
+					&:before {
+						font-weight: 400;
+					}
+				}
+			}
+
+			img {
+				width: 100%;
+				max-width: 100%;
+				height: auto;
+				margin-bottom: 44px;
+				border-radius: 8px;
+			}
 		}
 	}
 

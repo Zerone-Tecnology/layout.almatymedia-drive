@@ -19,7 +19,7 @@ span {
 input {
 	font-size: $text-md;
 }
-
+q,
 blockquote {
 	margin: 0 0 52px 0;
 	padding: 40px 44px 40px 40px;
@@ -216,12 +216,36 @@ button {
 			row-gap: 30px;
 		}
 	}
+	&-col {
+		&-20 {
+			column-gap: 20px;
+		}
+	}
 }
 
 .m {
+	&t {
+		&-5 {
+			margin-top: 52px;
+		}
+		&-6 {
+			margin-top: 60px;
+		}
+	}
 	&b {
 		&-6 {
 			margin-bottom: 60px;
+		}
+	}
+}
+
+.shadow {
+	&--disabled {
+		box-shadow: none !important;
+		filter: none !important;
+		* {
+			box-shadow: none !important;
+			filter: none !important;
 		}
 	}
 }
