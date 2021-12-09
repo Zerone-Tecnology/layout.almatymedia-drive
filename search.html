@@ -182,11 +182,11 @@
                                             </div>
                                         </div>
                                         <div class="col-3 d-flex align-items-end">
-                                            <div class="filter--block_closed">
-                                                <div class="icon--setting btn btn-icon btn-icon-standart">
+                                            <div class="filter--block_closed d-flex align-items-end">
+                                                <div class="icon--setting btn btn-icon btn-icon-standart open_btn">
                                                     <img src="./assets/image/icons/icon-settings_closed.svg" alt="search filter">
                                                 </div>
-                                                <span>Фильтр поиска</span>
+                                                <button class="filter_search-block-open-btn">Фильтр поиска</button>
                                             </div>
                                             <div class="filter--block_open">
 												<div class="icon--setting btn btn-icon btn-icon-standart">
@@ -196,7 +196,7 @@
                                         </div>
                                     </div>
                                     <div class="row d-flex flex-column filter_search-block">
-										<span class="float-right">Сбросить фильтры</span>
+										<button class="col-10 filter_search-block-close-btn close_btn">Сбросить фильтры</button>
                                         <h4 class="filter_search-block-title">
                                             Фильтр поиска
                                         </h4>
@@ -240,7 +240,7 @@
                                                 
                                                 <input type="text" id="amount-2" readonly >
 
-                                                <button class="btn filter_search-block-btn">Применить</button>
+                                                <button class="btn filter_search-block-send-btn">Применить</button>
                                                 
 											</div>
                                         </div>
@@ -443,9 +443,20 @@
                     $( "#amount-2" ).val( (new Date($( "#slider-range" ).slider( "values", 1 )*1000)).getFullYear() + " " + ((new Date($( "#slider-range" ).slider( "values", 1 )*1000)).getMonth() + 1) + " " + (new Date($( "#slider-range" ).slider( "values", 1 )*1000)).getDate());
                 }
             );
-            $( "p" ).click(function() {
-                $( this ).toggleClass( "highlight" );
-            });
+            
+			$('.open_btn, .filter_search-block-open-btn').click(function() {
+				$('.open_btn').toggleClass('close');
+				$('.filter_search-block-open-btn').toggleClass('close');
+				$( '.filter--block_open' ).toggleClass( "open" );
+				$( '.filter_search-block' ).toggleClass( "open" );
+			});
+			$('.filter--block_open, .filter_search-block-close-btn').click(function() {
+				$('.open_btn').toggleClass('close');
+				$('.filter_search-block-open-btn').toggleClass('close');
+				$( '.filter--block_open' ).toggleClass( "open" );
+				$( '.filter_search-block' ).toggleClass( "open" );
+			});
+
         </script>
 
 	</body>
