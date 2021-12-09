@@ -993,6 +993,7 @@ header .lang--item-active a:hover,
 }
 
 footer {
+  position: relative;
   padding: 90px 0 80px 0;
   background-color: #ffffff;
 }
@@ -1526,11 +1527,37 @@ section .btn-inline {
 }
 
 .shapes {
-  overflow-x: hidden;
+  overflow: hidden;
   position: absolute;
   min-height: 500px;
   width: 100%;
   pointer-events: none;
+  top: 0;
+  left: 0;
+}
+
+.shapes--footer {
+  height: 100%;
+  min-height: 100%;
+}
+
+.shapes--footer .shapes--bottom-right, .shapes--footer .shapes--bottom-left, .shapes--footer .shapes--bottom-center {
+  position: absolute;
+}
+
+.shapes--footer .shapes--bottom-left {
+  left: 50px;
+  top: 100px;
+}
+
+.shapes--footer .shapes--bottom-center {
+  left: 48%;
+  bottom: -100px;
+}
+
+.shapes--footer .shapes--bottom-right {
+  right: 60px;
+  top: 10px;
 }
 
 .shapes--bottom-right, .shapes--bottom-left {

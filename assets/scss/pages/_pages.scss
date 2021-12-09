@@ -52,11 +52,39 @@
 }
 
 .shapes {
-	overflow-x: hidden;
+	overflow: hidden;
 	position: absolute;
 	min-height: 500px;
 	width: 100%;
 	pointer-events: none;
+	top: 0;
+	left: 0;
+
+	&--footer {
+		height: 100%;
+		min-height: 100%;
+
+		.shapes--bottom {
+			&-right,
+			&-left,
+			&-center {
+				position: absolute;
+			}
+			&-left {
+				left: 50px;
+				top: 100px;
+			}
+			&-center {
+				left: 48%;
+				bottom: -100px;
+			}
+			&-right {
+				right: 60px;
+				top: 10px;
+			}
+		}
+	}
+
 	&--bottom {
 		&-right,
 		&-left {
