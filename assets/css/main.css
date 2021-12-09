@@ -1029,7 +1029,7 @@ section {
 }
 
 section.section-hero {
-  height: 100vh;
+  padding: 180px 0;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 8px 45px rgba(148, 165, 208, 0.25);
           box-shadow: 0px 8px 45px rgba(148, 165, 208, 0.25);
@@ -1040,7 +1040,7 @@ section.section-hero .container {
 }
 
 section.section-hero .container .ruh--logotype {
-  top: 176px;
+  top: 0px;
   max-height: 70px;
   opacity: 0.8;
 }
@@ -1523,4 +1523,46 @@ section .btn-inline {
 
 .page--title {
   margin: 0;
+}
+
+.shapes {
+  overflow-x: hidden;
+  position: absolute;
+  min-height: 500px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.shapes--bottom-right, .shapes--bottom-left {
+  position: absolute;
+  top: 200px;
+}
+
+.shapes--bottom-left {
+  left: 0;
+}
+
+.shapes--bottom-right {
+  right: -60px;
+}
+
+.shapes--top-right, .shapes--top-left {
+  position: absolute;
+  top: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.shapes--top-left {
+  top: 0px;
+  left: 140px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.shapes--top-right {
+  top: -102px;
+  right: 140px;
+  -webkit-transform: rotate(224deg);
+          transform: rotate(224deg);
 }

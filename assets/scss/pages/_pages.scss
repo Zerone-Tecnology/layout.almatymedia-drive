@@ -50,3 +50,42 @@
 		margin: 0;
 	}
 }
+
+.shapes {
+	overflow-x: hidden;
+	position: absolute;
+	min-height: 500px;
+	width: 100%;
+	pointer-events: none;
+	&--bottom {
+		&-right,
+		&-left {
+			position: absolute;
+			top: 200px;
+		}
+		&-left {
+			left: 0;
+		}
+		&-right {
+			right: -60px;
+		}
+	}
+	&--top {
+		&-right,
+		&-left {
+			position: absolute;
+			top: 0;
+			transform-origin: center;
+		}
+		&-left {
+			top: 0px;
+			left: 140px;
+			transform: rotate(90deg);
+		}
+		&-right {
+			top: -102px;
+			right: 140px;
+			transform: rotate(224deg);
+		}
+	}
+}
