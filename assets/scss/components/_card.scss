@@ -18,6 +18,8 @@
 		&-info {
 			position: relative;
 			padding: 56px;
+			min-height: 242px;
+			max-height: 242px;
 			border-radius: $radius-rounded-card;
 			background-color: $color-white;
 			@include shadow-v2;
@@ -42,6 +44,8 @@
 		background: $gradient-dark-1;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		max-height: 90px;
+		overflow: hidden;
 		h3,
 		h4 {
 			max-height: 90px;
