@@ -19,9 +19,11 @@
 		<link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
 		<link rel="stylesheet" href="./assets/css/main.min.css" />
 		<link rel="stylesheet" href="./assets/css/custom.min.css" />
-        <link rel="stylesheet" href="./assets/css/search_page.css" />
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
-        
+		<link
+			rel="stylesheet"
+			href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
+		/>
+
 		<!-- Script -->
 		<script
 			src="./assets/js/lib/jquery/jquery-3.6.0.min.js"
@@ -29,7 +31,7 @@
 			sync
 		></script>
 		<script src="./assets/js/lib/anime/anime.min.js" module sync></script>
-        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 	</head>
 	<body>
 		<!-- main -->
@@ -169,92 +171,144 @@
 						</div>
 					</div>
 					<div class="row page--content search--page">
-                        <div class="col-12">
-                            <div class="search--wrapper">
+						<div class="col-12">
+							<div class="search--wrapper">
 								<form class="form--search">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <div class="input--wrapper input--fbtn">
-                                                <input type="text" placeholder="Что будем искать?" />
-                                                <button type="submit" class="btn btn-icon mr-3">
-                                                    <img src="./assets/image/icons/icon-search.svg" alt="" />
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="col-3 d-flex align-items-end">
-                                            <div class="filter--block_closed d-flex align-items-end">
-                                                <div class="icon--setting btn btn-icon btn-icon-standart open_btn">
-                                                    <img src="./assets/image/icons/icon-settings_closed.svg" alt="search filter">
-                                                </div>
-                                                <button class="filter_search-block-open-btn">Фильтр поиска</button>
-                                            </div>
-                                            <div class="filter--block_open">
-												<div class="icon--setting btn btn-icon btn-icon-standart">
-                                                    <img src="./assets/image/icons/icon-settings.svg" alt="search filter">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row d-flex flex-column filter_search-block">
-										<button class="col-10 filter_search-block-close-btn close_btn">Сбросить фильтры</button>
-                                        <h4 class="filter_search-block-title">
-                                            Фильтр поиска
-                                        </h4>
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <h5>Спецпроект</h5>
-                                                <div class="input--wrapper input--fbtn">
-                                                    <input type="text" id="specproekt" placeholder="Проект поэтапного перевода алфавита" />
-                                                    <button type="" class="btn btn-icon mr-3">
-                                                        <img src="./assets/image/icons/icon-vector-down.svg" alt="" />
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <h5>Формат контента</h5>
-                                                <div class="row">
-                                                    <div class="form_radio input--wrapper input--fbtn radio">
-														<input id="radio-1" type="radio" name="radio" value="1" checked>
-                                                        <label for="radio-1">Фотография</label>
-                                                    </div>
-                                                    <div class="form_radio input--wrapper input--fbtn radio">
-                                                        <input id="radio-2" type="radio" name="radio" value="2">
-                                                        <label for="radio-2">Видео</label>
+									<div class="row">
+										<div class="col-9">
+											<div class="input--wrapper input--fbtn">
+												<input type="text" placeholder="Что будем искать?" />
+												<button type="submit" class="btn btn-icon mr-3">
+													<img
+														src="./assets/image/icons/icon-search.svg"
+														alt=""
+													/>
+												</button>
+											</div>
+										</div>
+										<div class="col-3 d-flex align-items-end">
+											<div class="filter--block_closed d-flex align-items-end">
+												<div
+													class="
+														icon--setting
+														btn btn-icon btn-icon-standart
+														open_btn
+													"
+												>
+													<img
+														src="./assets/image/icons/icon-settings_closed.svg"
+														alt="search filter"
+													/>
+												</div>
+												<button class="filter_search-block-open-btn">
+													Фильтр поиска
+												</button>
+											</div>
+											<div class="filter--block_open">
+												<div
+													class="icon--setting btn btn-icon btn-icon-standart"
+												>
+													<img
+														src="./assets/image/icons/icon-settings.svg"
+														alt="search filter"
+													/>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row d-flex flex-column filter_search-block">
+										<button
+											class="col-10 filter_search-block-close-btn close_btn"
+										>
+											Сбросить фильтры
+										</button>
+										<h4 class="filter_search-block-title">Фильтр поиска</h4>
+										<div class="row">
+											<div class="col-4">
+												<h5>Спецпроект</h5>
+												<div class="input--wrapper input--fbtn">
+													<input
+														type="text"
+														id="specproekt"
+														placeholder="Проект поэтапного перевода алфавита"
+													/>
+													<button type="" class="btn btn-icon mr-3">
+														<img
+															src="./assets/image/icons/icon-vector-down.svg"
+															alt=""
+														/>
+													</button>
+												</div>
+											</div>
+											<div class="col">
+												<h5>Формат контента</h5>
+												<div class="row">
+													<div
+														class="form_radio input--wrapper input--fbtn radio"
+													>
+														<input
+															id="radio-1"
+															type="radio"
+															name="radio"
+															value="1"
+															checked
+														/>
+														<label for="radio-1">Фотография</label>
 													</div>
-                                                    <div class="form_radio input--wrapper input--fbtn radio">
-                                                        <input id="radio-3" type="radio" name="radio" value="3">
+													<div
+														class="form_radio input--wrapper input--fbtn radio"
+													>
+														<input
+															id="radio-2"
+															type="radio"
+															name="radio"
+															value="2"
+														/>
+														<label for="radio-2">Видео</label>
+													</div>
+													<div
+														class="form_radio input--wrapper input--fbtn radio"
+													>
+														<input
+															id="radio-3"
+															type="radio"
+															name="radio"
+															value="3"
+														/>
 														<label for="radio-3">Мероприятия</label>
 													</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h5>Диапазон публикации</h5>
-                                            </div>
-											<div class="col-12 d-flex flex-row align-items-center">
-                                                
-                                                <input type="text" id="amount-1" readonly >
-                                                
-                                                <div id="slider-range"></div>
-                                                
-                                                <input type="text" id="amount-2" readonly >
-
-                                                <button class="btn filter_search-block-send-btn">Применить</button>
-                                                
+												</div>
 											</div>
-                                        </div>
-                                    </div>
-                                    
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<h5>Диапазон публикации</h5>
+											</div>
+											<div class="col-12 d-flex flex-row align-items-center">
+												<input type="text" id="amount-1" readonly />
+
+												<div id="slider-range"></div>
+
+												<input type="text" id="amount-2" readonly />
+
+												<button class="btn filter_search-block-send-btn">
+													Применить
+												</button>
+											</div>
+										</div>
+									</div>
 								</form>
 							</div>
-                        </div>
+						</div>
 					</div>
-                    <div class="row block--search-result">
-                        <div class="col-4">
+					<div class="row block--search-result">
+						<div class="col-4">
 							<div class="card--item d-flex flex-column">
 								<div class="card--item-image">
-                                    <img src="https://s3-alpha-sig.figma.com/img/abbd/88d7/f0e74a7a7e1c8dc1326b12d0a89c856d?Expires=1639958400&Signature=Ps8vpSHPkCj5lB4nFO04JHqqVAu4PH0AD23WdfRXX8DAl8u0wj12~MXZqG4SM08CmO35gpyiGv3x-NeM~Kt9~7eydbT15Z4hYI3iGYqlCm~LwUd6nULTYJu~IzGMMEERj1Yz3Z-HtC1urkZA1FYDstGlD1aWkwiXcG-pbsc7gLkSC3qja2qu9MT8BAwbUCrFrpkcD1FUkhNxnXIlVbkFrqyKpyz3JG7PuvB6sjPGddmc063swXZOOXN7AihelLvzRwmnORaHDqtUNcvrZtO5b3RpE8hER2f4EEbtydJ5CEtTq4~4vVA6qRNOnfcYxTCeyXVgA2z9LcuTepT2tay~0A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" width="100%"/>
+									<img
+										src="https://s3-alpha-sig.figma.com/img/abbd/88d7/f0e74a7a7e1c8dc1326b12d0a89c856d?Expires=1639958400&Signature=Ps8vpSHPkCj5lB4nFO04JHqqVAu4PH0AD23WdfRXX8DAl8u0wj12~MXZqG4SM08CmO35gpyiGv3x-NeM~Kt9~7eydbT15Z4hYI3iGYqlCm~LwUd6nULTYJu~IzGMMEERj1Yz3Z-HtC1urkZA1FYDstGlD1aWkwiXcG-pbsc7gLkSC3qja2qu9MT8BAwbUCrFrpkcD1FUkhNxnXIlVbkFrqyKpyz3JG7PuvB6sjPGddmc063swXZOOXN7AihelLvzRwmnORaHDqtUNcvrZtO5b3RpE8hER2f4EEbtydJ5CEtTq4~4vVA6qRNOnfcYxTCeyXVgA2z9LcuTepT2tay~0A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+										width="100%"
+									/>
 								</div>
 								<div class="card--item-info">
 									<div class="card--title">
@@ -262,16 +316,19 @@
 									</div>
 									<div class="card--description-more">
 										<a href="#">
-											<img src="./assets/image/icons/стрелка.svg" alt="">
+											<img src="./assets/image/icons/стрелка.svg" alt="" />
 										</a>
 									</div>
 								</div>
 							</div>
 						</div>
-                        <div class="col-4">
+						<div class="col-4">
 							<div class="card--item d-flex flex-column">
 								<div class="card--item-image">
-                                    <img src="https://s3-alpha-sig.figma.com/img/abbd/88d7/f0e74a7a7e1c8dc1326b12d0a89c856d?Expires=1639958400&Signature=Ps8vpSHPkCj5lB4nFO04JHqqVAu4PH0AD23WdfRXX8DAl8u0wj12~MXZqG4SM08CmO35gpyiGv3x-NeM~Kt9~7eydbT15Z4hYI3iGYqlCm~LwUd6nULTYJu~IzGMMEERj1Yz3Z-HtC1urkZA1FYDstGlD1aWkwiXcG-pbsc7gLkSC3qja2qu9MT8BAwbUCrFrpkcD1FUkhNxnXIlVbkFrqyKpyz3JG7PuvB6sjPGddmc063swXZOOXN7AihelLvzRwmnORaHDqtUNcvrZtO5b3RpE8hER2f4EEbtydJ5CEtTq4~4vVA6qRNOnfcYxTCeyXVgA2z9LcuTepT2tay~0A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" width="100%"/>
+									<img
+										src="https://s3-alpha-sig.figma.com/img/abbd/88d7/f0e74a7a7e1c8dc1326b12d0a89c856d?Expires=1639958400&Signature=Ps8vpSHPkCj5lB4nFO04JHqqVAu4PH0AD23WdfRXX8DAl8u0wj12~MXZqG4SM08CmO35gpyiGv3x-NeM~Kt9~7eydbT15Z4hYI3iGYqlCm~LwUd6nULTYJu~IzGMMEERj1Yz3Z-HtC1urkZA1FYDstGlD1aWkwiXcG-pbsc7gLkSC3qja2qu9MT8BAwbUCrFrpkcD1FUkhNxnXIlVbkFrqyKpyz3JG7PuvB6sjPGddmc063swXZOOXN7AihelLvzRwmnORaHDqtUNcvrZtO5b3RpE8hER2f4EEbtydJ5CEtTq4~4vVA6qRNOnfcYxTCeyXVgA2z9LcuTepT2tay~0A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+										width="100%"
+									/>
 								</div>
 								<div class="card--item-info">
 									<div class="card--title">
@@ -279,16 +336,19 @@
 									</div>
 									<div class="card--description-more">
 										<a href="#">
-											<img src="./assets/image/icons/стрелка.svg" alt="">
+											<img src="./assets/image/icons/стрелка.svg" alt="" />
 										</a>
 									</div>
 								</div>
 							</div>
 						</div>
-                        <div class="col-4">
+						<div class="col-4">
 							<div class="card--item d-flex flex-column">
 								<div class="card--item-image">
-                                    <img src="https://s3-alpha-sig.figma.com/img/abbd/88d7/f0e74a7a7e1c8dc1326b12d0a89c856d?Expires=1639958400&Signature=Ps8vpSHPkCj5lB4nFO04JHqqVAu4PH0AD23WdfRXX8DAl8u0wj12~MXZqG4SM08CmO35gpyiGv3x-NeM~Kt9~7eydbT15Z4hYI3iGYqlCm~LwUd6nULTYJu~IzGMMEERj1Yz3Z-HtC1urkZA1FYDstGlD1aWkwiXcG-pbsc7gLkSC3qja2qu9MT8BAwbUCrFrpkcD1FUkhNxnXIlVbkFrqyKpyz3JG7PuvB6sjPGddmc063swXZOOXN7AihelLvzRwmnORaHDqtUNcvrZtO5b3RpE8hER2f4EEbtydJ5CEtTq4~4vVA6qRNOnfcYxTCeyXVgA2z9LcuTepT2tay~0A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" width="100%"/>
+									<img
+										src="https://s3-alpha-sig.figma.com/img/abbd/88d7/f0e74a7a7e1c8dc1326b12d0a89c856d?Expires=1639958400&Signature=Ps8vpSHPkCj5lB4nFO04JHqqVAu4PH0AD23WdfRXX8DAl8u0wj12~MXZqG4SM08CmO35gpyiGv3x-NeM~Kt9~7eydbT15Z4hYI3iGYqlCm~LwUd6nULTYJu~IzGMMEERj1Yz3Z-HtC1urkZA1FYDstGlD1aWkwiXcG-pbsc7gLkSC3qja2qu9MT8BAwbUCrFrpkcD1FUkhNxnXIlVbkFrqyKpyz3JG7PuvB6sjPGddmc063swXZOOXN7AihelLvzRwmnORaHDqtUNcvrZtO5b3RpE8hER2f4EEbtydJ5CEtTq4~4vVA6qRNOnfcYxTCeyXVgA2z9LcuTepT2tay~0A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+										width="100%"
+									/>
 								</div>
 								<div class="card--item-info">
 									<div class="card--title">
@@ -296,16 +356,19 @@
 									</div>
 									<div class="card--description-more">
 										<a href="#">
-											<img src="./assets/image/icons/стрелка.svg" alt="">
+											<img src="./assets/image/icons/стрелка.svg" alt="" />
 										</a>
 									</div>
 								</div>
 							</div>
 						</div>
-                        <div class="col-4">
+						<div class="col-4">
 							<div class="card--item d-flex flex-column">
 								<div class="card--item-image">
-                                    <img src="https://s3-alpha-sig.figma.com/img/abbd/88d7/f0e74a7a7e1c8dc1326b12d0a89c856d?Expires=1639958400&Signature=Ps8vpSHPkCj5lB4nFO04JHqqVAu4PH0AD23WdfRXX8DAl8u0wj12~MXZqG4SM08CmO35gpyiGv3x-NeM~Kt9~7eydbT15Z4hYI3iGYqlCm~LwUd6nULTYJu~IzGMMEERj1Yz3Z-HtC1urkZA1FYDstGlD1aWkwiXcG-pbsc7gLkSC3qja2qu9MT8BAwbUCrFrpkcD1FUkhNxnXIlVbkFrqyKpyz3JG7PuvB6sjPGddmc063swXZOOXN7AihelLvzRwmnORaHDqtUNcvrZtO5b3RpE8hER2f4EEbtydJ5CEtTq4~4vVA6qRNOnfcYxTCeyXVgA2z9LcuTepT2tay~0A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" width="100%"/>
+									<img
+										src="https://s3-alpha-sig.figma.com/img/abbd/88d7/f0e74a7a7e1c8dc1326b12d0a89c856d?Expires=1639958400&Signature=Ps8vpSHPkCj5lB4nFO04JHqqVAu4PH0AD23WdfRXX8DAl8u0wj12~MXZqG4SM08CmO35gpyiGv3x-NeM~Kt9~7eydbT15Z4hYI3iGYqlCm~LwUd6nULTYJu~IzGMMEERj1Yz3Z-HtC1urkZA1FYDstGlD1aWkwiXcG-pbsc7gLkSC3qja2qu9MT8BAwbUCrFrpkcD1FUkhNxnXIlVbkFrqyKpyz3JG7PuvB6sjPGddmc063swXZOOXN7AihelLvzRwmnORaHDqtUNcvrZtO5b3RpE8hER2f4EEbtydJ5CEtTq4~4vVA6qRNOnfcYxTCeyXVgA2z9LcuTepT2tay~0A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+										width="100%"
+									/>
 								</div>
 								<div class="card--item-info">
 									<div class="card--title">
@@ -313,16 +376,19 @@
 									</div>
 									<div class="card--description-more">
 										<a href="#">
-											<img src="./assets/image/icons/стрелка.svg" alt="">
+											<img src="./assets/image/icons/стрелка.svg" alt="" />
 										</a>
 									</div>
 								</div>
 							</div>
 						</div>
-                        <div class="col-4">
+						<div class="col-4">
 							<div class="card--item d-flex flex-column">
 								<div class="card--item-image">
-                                    <img src="https://s3-alpha-sig.figma.com/img/abbd/88d7/f0e74a7a7e1c8dc1326b12d0a89c856d?Expires=1639958400&Signature=Ps8vpSHPkCj5lB4nFO04JHqqVAu4PH0AD23WdfRXX8DAl8u0wj12~MXZqG4SM08CmO35gpyiGv3x-NeM~Kt9~7eydbT15Z4hYI3iGYqlCm~LwUd6nULTYJu~IzGMMEERj1Yz3Z-HtC1urkZA1FYDstGlD1aWkwiXcG-pbsc7gLkSC3qja2qu9MT8BAwbUCrFrpkcD1FUkhNxnXIlVbkFrqyKpyz3JG7PuvB6sjPGddmc063swXZOOXN7AihelLvzRwmnORaHDqtUNcvrZtO5b3RpE8hER2f4EEbtydJ5CEtTq4~4vVA6qRNOnfcYxTCeyXVgA2z9LcuTepT2tay~0A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" width="100%"/>
+									<img
+										src="https://s3-alpha-sig.figma.com/img/abbd/88d7/f0e74a7a7e1c8dc1326b12d0a89c856d?Expires=1639958400&Signature=Ps8vpSHPkCj5lB4nFO04JHqqVAu4PH0AD23WdfRXX8DAl8u0wj12~MXZqG4SM08CmO35gpyiGv3x-NeM~Kt9~7eydbT15Z4hYI3iGYqlCm~LwUd6nULTYJu~IzGMMEERj1Yz3Z-HtC1urkZA1FYDstGlD1aWkwiXcG-pbsc7gLkSC3qja2qu9MT8BAwbUCrFrpkcD1FUkhNxnXIlVbkFrqyKpyz3JG7PuvB6sjPGddmc063swXZOOXN7AihelLvzRwmnORaHDqtUNcvrZtO5b3RpE8hER2f4EEbtydJ5CEtTq4~4vVA6qRNOnfcYxTCeyXVgA2z9LcuTepT2tay~0A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+										width="100%"
+									/>
 								</div>
 								<div class="card--item-info">
 									<div class="card--title">
@@ -330,16 +396,19 @@
 									</div>
 									<div class="card--description-more">
 										<a href="#">
-											<img src="./assets/image/icons/стрелка.svg" alt="">
+											<img src="./assets/image/icons/стрелка.svg" alt="" />
 										</a>
 									</div>
 								</div>
 							</div>
 						</div>
-                        <div class="col-4">
+						<div class="col-4">
 							<div class="card--item d-flex flex-column">
 								<div class="card--item-image">
-                                    <img src="https://s3-alpha-sig.figma.com/img/abbd/88d7/f0e74a7a7e1c8dc1326b12d0a89c856d?Expires=1639958400&Signature=Ps8vpSHPkCj5lB4nFO04JHqqVAu4PH0AD23WdfRXX8DAl8u0wj12~MXZqG4SM08CmO35gpyiGv3x-NeM~Kt9~7eydbT15Z4hYI3iGYqlCm~LwUd6nULTYJu~IzGMMEERj1Yz3Z-HtC1urkZA1FYDstGlD1aWkwiXcG-pbsc7gLkSC3qja2qu9MT8BAwbUCrFrpkcD1FUkhNxnXIlVbkFrqyKpyz3JG7PuvB6sjPGddmc063swXZOOXN7AihelLvzRwmnORaHDqtUNcvrZtO5b3RpE8hER2f4EEbtydJ5CEtTq4~4vVA6qRNOnfcYxTCeyXVgA2z9LcuTepT2tay~0A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" width="100%"/>
+									<img
+										src="https://s3-alpha-sig.figma.com/img/abbd/88d7/f0e74a7a7e1c8dc1326b12d0a89c856d?Expires=1639958400&Signature=Ps8vpSHPkCj5lB4nFO04JHqqVAu4PH0AD23WdfRXX8DAl8u0wj12~MXZqG4SM08CmO35gpyiGv3x-NeM~Kt9~7eydbT15Z4hYI3iGYqlCm~LwUd6nULTYJu~IzGMMEERj1Yz3Z-HtC1urkZA1FYDstGlD1aWkwiXcG-pbsc7gLkSC3qja2qu9MT8BAwbUCrFrpkcD1FUkhNxnXIlVbkFrqyKpyz3JG7PuvB6sjPGddmc063swXZOOXN7AihelLvzRwmnORaHDqtUNcvrZtO5b3RpE8hER2f4EEbtydJ5CEtTq4~4vVA6qRNOnfcYxTCeyXVgA2z9LcuTepT2tay~0A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+										width="100%"
+									/>
 								</div>
 								<div class="card--item-info">
 									<div class="card--title">
@@ -347,13 +416,13 @@
 									</div>
 									<div class="card--description-more">
 										<a href="#">
-											<img src="./assets/image/icons/стрелка.svg" alt="">
+											<img src="./assets/image/icons/стрелка.svg" alt="" />
 										</a>
 									</div>
 								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 				</div>
 			</div>
 
@@ -424,40 +493,5 @@
 
 		<!-- Scripts -->
 		<script src="./assets/js/common.js" sync></script>
-
-        <script type="text/javascript">
-            $(document).ready( 
-                function() {
-                    $( "#slider-range" ).slider({
-                    range: true,
-                    min: new Date('2020.09.31').getTime() / 1000,
-                    max: new Date('2022.02.31').getTime() / 1000,
-                    step: 86400,
-                    values: [ new Date('2021.02.18').getTime() / 1000, new Date('2021.09.09').getTime() / 1000 ],
-                    slide: function( event, ui ) {
-                        $( "#amount-1" ).val( (new Date(ui.values[ 0 ] *1000)).getFullYear() + " " + ((new Date(ui.values[ 0 ] *1000)).getMonth() + 1) + " " + (new Date(ui.values[ 0 ] *1000)).getDate() );
-                        $( "#amount-2" ).val( (new Date(ui.values[ 1 ] *1000)).getFullYear() + " " + ((new Date(ui.values[ 1 ] *1000)).getMonth() + 1) + " " + (new Date(ui.values[ 1 ] *1000)).getDate() );
-                    }
-                    });
-                    $( "#amount-1" ).val( (new Date($( "#slider-range" ).slider( "values", 0 )*1000)).getFullYear() + " " + ((new Date($( "#slider-range" ).slider( "values", 0 )*1000)).getMonth() + 1) + " " + (new Date($( "#slider-range" ).slider( "values", 0 )*1000)).getDate());
-                    $( "#amount-2" ).val( (new Date($( "#slider-range" ).slider( "values", 1 )*1000)).getFullYear() + " " + ((new Date($( "#slider-range" ).slider( "values", 1 )*1000)).getMonth() + 1) + " " + (new Date($( "#slider-range" ).slider( "values", 1 )*1000)).getDate());
-                }
-            );
-            
-			$('.open_btn, .filter_search-block-open-btn').click(function() {
-				$('.open_btn').toggleClass('close');
-				$('.filter_search-block-open-btn').toggleClass('close');
-				$( '.filter--block_open' ).toggleClass( "open" );
-				$( '.filter_search-block' ).toggleClass( "open" );
-			});
-			$('.filter--block_open, .filter_search-block-close-btn').click(function() {
-				$('.open_btn').toggleClass('close');
-				$('.filter_search-block-open-btn').toggleClass('close');
-				$( '.filter--block_open' ).toggleClass( "open" );
-				$( '.filter_search-block' ).toggleClass( "open" );
-			});
-
-        </script>
-
 	</body>
 </html>
