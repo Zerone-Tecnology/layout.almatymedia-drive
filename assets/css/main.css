@@ -833,6 +833,37 @@ button {
   border-bottom-right-radius: 80px;
 }
 
+.tab--content {
+  display: none;
+}
+
+.tab--content.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab--content-selector {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  row-gap: 30px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.tab--content-selector .btn-tab {
+  background: #ffffff;
+  color: #319ae6;
+  -webkit-filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));
+          filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));
+}
+
+.tab--content-selector .btn-tab.active {
+  background: #319ae6;
+  color: #ffffff;
+}
+
 header,
 .header {
   width: 100%;

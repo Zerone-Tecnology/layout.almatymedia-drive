@@ -88,3 +88,31 @@
 		}
 	}
 }
+
+.tab {
+	&--content {
+		display: none;
+		&.active {
+			display: flex;
+		}
+		&-wrapper {
+		}
+		&-selector {
+			display: inline-flex;
+			row-gap: 30px;
+			column-gap: 30px;
+
+			.btn {
+				&-tab {
+					background: $color-white;
+					color: $color-secondary;
+					@include shadow-v2();
+					&.active {
+						background: $color-secondary;
+						color: $color-white;
+					}
+				}
+			}
+		}
+	}
+}
