@@ -17,11 +17,11 @@
 
 		&-info {
 			position: relative;
-			padding: 56px;
-			min-height: 242px;
+			padding: 56px 56px 56px 36px;
 			max-height: 242px;
 			border-radius: $radius-rounded-card;
 			background-color: $color-white;
+			box-sizing: content-box;
 			@include shadow-v2;
 
 			* {
@@ -93,8 +93,10 @@
 			border-top-left-radius: 8px;
 			border-top-right-radius: 8px;
 		}
-		min-width: 100%;
-		max-height: 100%;
+		min-width: 440px;
+		max-height: 440px;
+		object-fit: cover;
+		object-position: center;
 	}
 	&--links {
 		display: flex;

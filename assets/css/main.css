@@ -596,11 +596,12 @@ button {
 
 .card--item-info {
   position: relative;
-  padding: 56px;
-  min-height: 242px;
+  padding: 56px 56px 56px 36px;
   max-height: 242px;
   border-radius: 8px;
   background-color: #ffffff;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   -webkit-filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));
           filter: drop-shadow(0px 6px 12px rgba(148, 165, 208, 0.25));
 }
@@ -663,8 +664,12 @@ button {
 }
 
 .card--image {
-  min-width: 100%;
-  max-height: 100%;
+  min-width: 440px;
+  max-height: 440px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .card--image-wrapper {
