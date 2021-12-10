@@ -50,7 +50,15 @@
 		margin: 0;
 	}
 }
-
+.video--wrapper {
+	iframe {
+		width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+		box-sizing: border-box;
+		border-radius: 12px;
+	}
+}
 .gallery {
 	&--wrapper {
 		.row {
