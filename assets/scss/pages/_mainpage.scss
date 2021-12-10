@@ -6,15 +6,14 @@ section {
 
 	&.section {
 		&-hero {
-			height: 100vh;
-
+			padding: 180px 0;
 			background-color: $color-white;
 			@include shadow-v1();
 			.container {
 				position: relative;
 
 				.ruh--logotype {
-					top: 176px;
+					top: 0px;
 					max-height: 70px;
 					opacity: 0.8;
 				}
@@ -360,6 +359,7 @@ section {
 
 					img {
 						transform-origin: center;
+						@include shadow-v2();
 					}
 				}
 			}

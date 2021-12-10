@@ -9,6 +9,13 @@
 	&--wrapper {
 		display: flex;
 		width: auto;
+		font-weight: 500;
+
+		&-complex {
+			background-color: $color-gray-active;
+			border-radius: $radius-rounded;
+			padding-right: 32px;
+		}
 	}
 	&--inline {
 		display: inline-flex;
@@ -34,7 +41,7 @@
 
 	&-white {
 		background-color: $color-white;
-		@include shadow-v1();
+		@include shadow-v2();
 	}
 
 	// icons
@@ -51,8 +58,22 @@
 			background-color: $color-white;
 			border-radius: 50px;
 
-			@include shadow-v1();
+			@include shadow-v2();
 		}
+	}
+
+	&--circle {
+		width: 60px;
+		height: 60px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		background-color: $color-white;
+		border-radius: 50px;
+
+		@include shadow-v2();
 	}
 
 	&-dot {
@@ -70,6 +91,25 @@
 
 		&.active {
 			background-color: #595e6a;
+		}
+	}
+	&--list {
+		&-wrapper {
+			position: relative;
+			width: fit-content;
+			padding: 0 32px;
+		}
+	}
+
+	&-w {
+		&-60 {
+			width: 60px;
+			max-width: 60px;
+			max-height: 60px;
+			img {
+				max-width: 100%;
+				max-height: 100%;
+			}
 		}
 	}
 }
