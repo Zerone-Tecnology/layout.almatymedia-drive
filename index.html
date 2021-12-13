@@ -27,6 +27,37 @@
 			sync
 		></script>
 		<script src="./assets/js/lib/anime/anime.min.js" module sync></script>
+		<style>
+		header {
+			top: 0px;
+		}
+		.megamenu {
+            top: 0;
+            clip-path: circle(0% at 5% 10%);
+            transition: clip-path 1s;
+			display: block;
+			z-index: 10;
+        }
+
+        .megamenu.open_with_animation{
+            clip-path: circle(100%);
+        }
+
+		.menu_icon_close {
+			opacity: 0;
+		}
+
+		.menu_icon_burger.close_burger_icon {
+			height: 0;
+			opacity: 0;
+			transition: height 1s ease-in;
+		}
+
+		.menu_icon_close.open_close_icon {
+			opacity: 1;
+		}
+
+		</style>
 	</head>
 	<body>
 		<!-- main -->
@@ -139,8 +170,9 @@
 							<div class="row">
 								<div class="col header--block-left">
 									<div class="burger--wrapper">
-										<button class="btn btn-icon">
-											<img src="./assets/image/icons/icon-burger.svg" alt="" />
+										<button class="btn btn-icon" id="animation_menu_btn">
+											<img class="menu_icon_burger" src="./assets/image/icons/icon-burger.svg" alt="" />
+											<img class="menu_icon_close" src="./assets/image/icons/icon-close.svg" alt="" />
 										</button>
 									</div>
 									<div class="logo--wrapper">
@@ -1769,5 +1801,15 @@
 
 		<!-- Scripts -->
 		<script src="./assets/js/common.js" sync></script>
+		<script>
+			$(document).ready(function () {
+				$('#animation_menu_btn').click(function() {
+					$( ".megamenu" ).toggleClass('open_with_animation');
+					$( ".megamenu" ).toggleClass('megamenu-closed');
+					$( ".menu_icon_burger" ).toggleClass('close_burger_icon');
+					$( ".menu_icon_close" ).toggleClass('open_close_icon');
+				});
+			})
+		</script>
 	</body>
 </html>
