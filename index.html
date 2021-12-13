@@ -31,6 +31,11 @@
 		header {
 			top: 0px;
 		}
+		.btn-icon {
+			min-width: 54px;
+			overflow: hidden;
+			height: 41px;
+		}
 		.megamenu {
             top: 0;
             clip-path: circle(0% at 5% 10%);
@@ -43,20 +48,51 @@
             clip-path: circle(100%);
         }
 
+		.menu_icon_burger {
+			z-index: 8;
+			margin-top: 0px;
+			transition: all .22s ease-out;
+		}
+
+		.menu_icon_close {
+			z-index: 4;
+			margin-left: -35px;
+		}
+
 		.menu_icon_close {
 			opacity: 0;
+			transition: all .22s ease-out;
 		}
 
 		.menu_icon_burger.close_burger_icon {
-			height: 0;
-			opacity: 0;
-			transition: height 1s ease-in;
+			margin-top: -75px;
+			transform: rotate(15deg);
+			transition: all .22s ease-out;
 		}
 
 		.menu_icon_close.open_close_icon {
+			display: block;
 			opacity: 1;
+			transition: all .22s ease-out;
+    		animation: fadeInFromNone 0.5s ease-out;
 		}
 
+		@keyframes fadeInFromNone {
+			0% {
+				display: none;
+				opacity: 0;
+			}
+
+			16% {
+				display: none;
+				opacity: 0;
+			}
+
+			100% {
+				display: block;
+				opacity: 1;
+			}
+		}
 		</style>
 	</head>
 	<body>
@@ -171,8 +207,8 @@
 								<div class="col header--block-left">
 									<div class="burger--wrapper">
 										<button class="btn btn-icon" id="animation_menu_btn">
-											<img class="menu_icon_burger" src="./assets/image/icons/icon-burger.svg" alt="" />
-											<img class="menu_icon_close" src="./assets/image/icons/icon-close.svg" alt="" />
+											<img class="menu_icon_burger" src="./assets/image/icons/icon-burger.svg" width="37px" alt="" />
+											<img class="menu_icon_close" src="./assets/image/icons/icon-close.svg" width="37px" alt="" />
 										</button>
 									</div>
 									<div class="logo--wrapper">
