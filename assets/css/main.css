@@ -1036,6 +1036,98 @@ header .lang--item-active a:hover,
   mix-blend-mode: multiply;
 }
 
+.btn-icon {
+  min-width: 54px;
+  overflow: hidden;
+  height: 54px;
+}
+
+.megamenu {
+  top: 0;
+  -webkit-clip-path: circle(0% at 5% 10%);
+          clip-path: circle(0% at 5% 10%);
+  -webkit-transition: -webkit-clip-path 1s;
+  transition: -webkit-clip-path 1s;
+  transition: clip-path 1s;
+  transition: clip-path 1s, -webkit-clip-path 1s;
+  display: block;
+  z-index: 10;
+}
+
+.megamenu.open_with_animation {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+.menu_icon_burger {
+  z-index: 8;
+  margin-top: 0px;
+  -webkit-transition: all 0.22s ease-out;
+  transition: all 0.22s ease-out;
+}
+
+.menu_icon_close {
+  z-index: 4;
+  margin-left: -35px;
+}
+
+.menu_icon_close {
+  opacity: 0;
+  -webkit-transition: all 0.22s ease-out;
+  transition: all 0.22s ease-out;
+}
+
+.menu_icon_burger.close_burger_icon {
+  margin-top: -88px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  -webkit-transition: all 0.22s ease-out;
+  transition: all 0.22s ease-out;
+}
+
+.menu_icon_close.open_close_icon {
+  display: block;
+  opacity: 1;
+  -webkit-transition: all 0.22s ease-out;
+  transition: all 0.22s ease-out;
+  -webkit-animation: fadeInFromNone 0.5s ease-out;
+          animation: fadeInFromNone 0.5s ease-out;
+}
+
+#animation_menu_btn:active {
+  background: #eff1f4;
+}
+
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  16% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  16% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
 footer {
   position: relative;
   padding: 90px 0 80px 0;

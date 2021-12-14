@@ -66,3 +66,13 @@ $('.filter--block_open, .filter_search-block-close-btn').click(
         $('.filter_search-block').toggleClass('open');
     }
 );
+
+// Menu
+$(document).ready(function () {
+    $('#animation_menu_btn').click(function () {
+        $(".megamenu").toggleClass('open_with_animation');
+        $(".megamenu").toggleClass('megamenu-closed');
+        $(".menu_icon_burger").toggleClass('close_burger_icon');
+        $(".menu_icon_close").toggleClass('open_close_icon');
+    });
+}) 
