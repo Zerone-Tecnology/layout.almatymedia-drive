@@ -18,7 +18,9 @@
 		&-info {
 			position: relative;
 			padding: 56px 56px 56px 36px;
-			max-height: 242px;
+			max-height: 220px;
+			min-height: 220px;
+			box-sizing: border-box;
 			border-radius: $radius-rounded-card;
 			background-color: $color-white;
 			box-sizing: content-box;
@@ -93,8 +95,8 @@
 			border-top-left-radius: 8px;
 			border-top-right-radius: 8px;
 		}
-		min-width: 440px;
-		max-height: 440px;
+		min-width: 265px;
+		max-height: 265px;
 		object-fit: cover;
 		object-position: center;
 	}

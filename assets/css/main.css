@@ -597,7 +597,10 @@ button {
 .card--item-info {
   position: relative;
   padding: 56px 56px 56px 36px;
-  max-height: 242px;
+  max-height: 220px;
+  min-height: 220px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 8px;
   background-color: #ffffff;
   -webkit-box-sizing: content-box;
@@ -664,8 +667,8 @@ button {
 }
 
 .card--image {
-  min-width: 440px;
-  max-height: 440px;
+  min-width: 265px;
+  max-height: 265px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
