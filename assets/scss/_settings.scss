@@ -209,6 +209,9 @@ button {
 }
 
 .gap {
+	&-min {
+		column-gap: 8px !important;
+	}
 	&-30 {
 		row-gap: 30px;
 		column-gap: 30px;

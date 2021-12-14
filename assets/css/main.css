@@ -359,6 +359,11 @@ button {
   cursor: pointer;
 }
 
+.gap-min {
+  -webkit-column-gap: 8px !important;
+          column-gap: 8px !important;
+}
+
 .gap-30 {
   row-gap: 30px;
   -webkit-column-gap: 30px;
@@ -478,6 +483,7 @@ button {
 .btn-icon svg {
   width: 100%;
   height: auto;
+  margin: 0 !important;
 }
 
 .btn-white {
@@ -664,8 +670,7 @@ button {
 }
 
 .card--image {
-  min-width: 265px;
-  max-height: 265px;
+  min-width: 247px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -999,6 +1004,8 @@ header .lang--item-active a:hover,
 
 .megamenu--socials {
   margin-top: 100px;
+  -webkit-column-gap: 8px !important;
+          column-gap: 8px !important;
 }
 
 .megamenu--list-main {
@@ -1883,6 +1890,14 @@ main input[type='range']::-webkit-slider-thumb {
   width: 330px;
 }
 
+.page--content-text > img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 44px;
+  border-radius: 8px;
+}
+
 .page--content-text {
   font-size: 18px;
   margin-top: 110px;
@@ -1905,14 +1920,6 @@ main input[type='range']::-webkit-slider-thumb {
 
 .page--content-text ul li:before {
   font-weight: 400;
-}
-
-.page--content-text img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 44px;
-  border-radius: 8px;
 }
 
 .page--title {
