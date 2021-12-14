@@ -27,77 +27,7 @@
 			sync
 		></script>
 		<script src="./assets/js/lib/anime/anime.min.js" module sync></script>
-		<style>
-		header {
-			top: 0px;
-		}
-		.btn-icon {
-			min-width: 54px;
-			overflow: hidden;
-			height: 54px;
-		}
-		.megamenu {
-            top: 0;
-            clip-path: circle(0% at 5% 10%);
-            transition: clip-path 1s;
-			display: block;
-			z-index: 10;
-        }
-
-        .megamenu.open_with_animation{
-            clip-path: circle(100%);
-        }
-
-		.menu_icon_burger {
-			z-index: 8;
-			margin-top: 0px;
-			transition: all .22s ease-out;
-		}
-
-		.menu_icon_close {
-			z-index: 4;
-			margin-left: -35px;
-		}
-
-		.menu_icon_close {
-			opacity: 0;
-			transition: all .22s ease-out;
-		}
-
-		.menu_icon_burger.close_burger_icon {
-			margin-top: -88px;
-			transform: rotate(15deg);
-			transition: all .22s ease-out;
-		}
-
-		.menu_icon_close.open_close_icon {
-			display: block;
-			opacity: 1;
-			transition: all .22s ease-out;
-    		animation: fadeInFromNone 0.5s ease-out;
-		}
-
-	    #animation_menu_btn:active {
-			background: #EFF1F4;
-		}
-
-		@keyframes fadeInFromNone {
-			0% {
-				display: none;
-				opacity: 0;
-			}
-
-			16% {
-				display: none;
-				opacity: 0;
-			}
-
-			100% {
-				display: block;
-				opacity: 1;
-			}
-		}
-		</style>
+		<style></style>
 	</head>
 	<body>
 		<!-- main -->
@@ -211,8 +141,18 @@
 								<div class="col header--block-left">
 									<div class="burger--wrapper">
 										<button class="btn btn-icon" id="animation_menu_btn">
-											<img class="menu_icon_burger" src="./assets/image/icons/icon-burger.svg" width="37px" alt="" />
-											<img class="menu_icon_close" src="./assets/image/icons/icon-close.svg" width="37px" alt="" />
+											<img
+												class="menu_icon_burger"
+												src="./assets/image/icons/icon-burger.svg"
+												width="37px"
+												alt=""
+											/>
+											<img
+												class="menu_icon_close"
+												src="./assets/image/icons/icon-close.svg"
+												width="37px"
+												alt=""
+											/>
 										</button>
 									</div>
 									<div class="logo--wrapper">
@@ -1841,15 +1781,5 @@
 
 		<!-- Scripts -->
 		<script src="./assets/js/common.js" sync></script>
-		<script>
-			$(document).ready(function () {
-				$('#animation_menu_btn').click(function() {
-					$( ".megamenu" ).toggleClass('open_with_animation');
-					$( ".megamenu" ).toggleClass('megamenu-closed');
-					$( ".menu_icon_burger" ).toggleClass('close_burger_icon');
-					$( ".menu_icon_close" ).toggleClass('open_close_icon');
-				});
-			})
-		</script>
 	</body>
 </html>
