@@ -1920,6 +1920,13 @@ main input[type='range']::-webkit-slider-thumb {
   line-height: 29px;
 }
 
+.page--content-text iframe {
+  width: 100%;
+  min-height: 420px;
+  border-radius: 8px;
+  margin-bottom: 44px;
+}
+
 .page--content-text ul {
   -webkit-padding-start: 40px;
           padding-inline-start: 40px;
