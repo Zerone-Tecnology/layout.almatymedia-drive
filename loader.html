@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOADER</title>
+
+    <style>
+        .loader-icon_block {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .loader-icon_block img {
+            animation: spin 3s linear infinite;
+        }
+        @keyframes spin { 
+            100% { 
+                transform:rotate(-360deg);
+            }
+        }
+
+        .wrapper-word_blocks {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .word_block {
+            display: block;
+            max-width: 100%;
+        }
+
+        .letter-block {
+            /* display: flex; */
+            float: left;
+            /* justify-content: center; */
+            /* margin: 10% auto; */
+            /* width: 354px; */
+            width: fit-content;
+            min-width: fit-content;
+            height: fit-content;
+            position: relative;  
+            overflow: hidden;
+        }
+        .letter-block img {
+            max-width: 100%; 
+            height: auto;
+        }
+
+        .letter-block:before {
+            content: '';
+            position: absolute;
+            /* width: 646px; */
+            width: 997px;
+            height: 465px;
+            border-radius: 49%;
+            border: 460px solid #fff;
+            transform: rotate(45deg);
+            top: -595px;
+            left: -831px;
+            background: transparent;
+            z-index: 1;
+            
+        }
+
+        .letter-block:after {
+            content: '';
+            position: absolute;
+            width: 725px;
+            height: 500px;
+            border-radius: 55%;
+            transform: rotate(-45deg);
+            top: 262px;
+            left: 210px;
+            background-color: rgb(255 255 255 / 11%);
+            z-index: 1;
+        }
+
+        /* Letter M */
+
+        .letter_M:before {         
+            animation: letter-M-translating-before 2.8s ease-in;
+        }
+
+        .letter_M:after {
+            animation: letter-M-translating-after 3s ease-in;
+        }
+
+        @keyframes letter-M-translating-before {
+            0% {
+                top: -1062px;
+                left: -1302px;
+                background-color: #fff;
+            }
+
+            38% {
+                background-color: #fff;
+            }
+
+            47% {
+                background-color: rgb(255 255 255 / 11%);
+            }
+
+            100% {
+                top: -595px;
+                left: -831px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+        }
+
+        @keyframes letter-M-translating-after {
+            0% {
+                top: -158px;
+                left: -115px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            70% {
+                top: -158px;
+                left: -115px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            84% {
+                background-color: rgb(255 255 255 / 11%);
+            }
+            93% {
+                background-color: transparent;
+            }
+            100% {
+                top: 262px;
+                left: 210px;
+                background-color: transparent;
+            }
+        }
+
+        /* Letter E */
+
+        .letter_E:before {
+            width: 1404px;
+            top: -874px;
+            left: -986px;
+            transform: rotate(90deg);
+            animation: letter-E-translating-before 2.8s ease-in;
+        }
+
+        .letter_E:after {
+            border-radius: 2%;
+            transform: rotate(-5deg);
+            top: 425px;
+            left: -88px;
+            background-color: transparent;
+            animation: letter-E-translating-after 3s ease-in;
+        }
+
+        @keyframes letter-E-translating-before {
+           0% {
+                top: -1440px;
+                left: -986px;
+            }
+
+            100% {
+                top: -874px;
+                left: -986px;
+            }
+        }
+
+        @keyframes letter-E-translating-after {
+            0% {
+                top: -118px;
+                left: -200px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            70% {
+                top: -118px;
+                left: -200px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            80% {
+                background-color: rgb(255 255 255 / 11%);
+            }
+            90% {
+                background-color: transparent;
+            }
+            100% {
+                top: 425px;
+                left: -88px;
+                background-color: transparent;
+            }
+        }
+
+        /* Letter D */
+
+        .letter_D:before {
+            top: -433px;
+            left: -775px;
+            animation: letter-D-translating-before 2.8s ease-in;
+        }
+
+        .letter_D:after {
+            background-color: transparent;
+            top: -503px;
+            left: -440px;
+            animation: letter-D-translating-after 3s ease-in;
+        }
+
+        @keyframes letter-D-translating-before {
+            0% {
+                top: -34px;
+                left: -385px;
+            }
+
+            100% {
+                top: -433px;
+                left: -775px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            
+        }
+
+        @keyframes letter-D-translating-after {
+            0% {
+                top: -158px;
+                left: -115px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            70% {
+                top: -158px;
+                left: -115px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            84% {
+                background-color: rgb(255 255 255 / 11%);
+            }
+            93% {
+                background-color: transparent;
+            }
+            100% {
+                top: -503px;
+                left: -440px;
+                background-color: transparent;
+            }
+        }
+
+        /* Letter I*/
+
+        .letter_I:before {
+            top: -472px;
+            left: -748px;
+            transform: rotate(90deg);
+            animation: letter-I-translating-before 3s ease-in;
+        }
+
+        @keyframes letter-I-translating-before {
+            0% {
+                top: 104px;
+                left: -867px;
+            }
+
+            67% {
+                top: 104px;
+                left: -867px;
+            }
+
+            100% {
+                top: -472px;
+                left: -748px;
+            }
+        }
+
+        /* Letter A */
+
+        .letter_A:before {    
+            transform: rotate(148deg);
+            top: -510px;
+            left: -820px;     
+            animation: letter-A-translating-before 2.8s ease-in;
+        }
+
+        .letter_A:after {
+            transform: rotate(42deg);
+            top: 291px;
+            left: -444px;
+            background-color: transparent;
+            animation: letter-A-translating-after 3s ease-in;
+        }
+
+        @keyframes letter-A-translating-before {
+            0% {
+                top: -1004px;
+                left: -343px;
+            }
+
+            100% {
+                top: -510px;
+                left: -820px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+        }
+
+        @keyframes letter-A-translating-after {
+            0% {
+                top: -10px;
+                left: -132px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+
+            70% {
+                top: -10px;
+                left: -132px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+
+            100% {
+                top: 291px;
+                left: -444px;
+                background-color: transparent;
+            }
+        }
+
+        /* Letter D_2 */
+
+        .letter_D_2:before {  
+            transform: rotate(0deg);
+            top: -625px;
+            left: -831px;       
+            animation: letter-D-2-translating-before 2.8s ease-in;
+        }
+
+        .letter_D_2:after {
+            transform: rotate(0deg);
+            top: -122px;
+            left: 312px;
+            animation: letter-D-2-translating-after 3s ease-in;
+        }
+
+        @keyframes letter-D-2-translating-before {
+            0% {
+                top: -490px;
+                left: -1464px;
+                background-color: #fff;
+            }
+
+            38% {
+                background-color: #fff;
+            }
+
+            47% {
+                background-color: rgb(255 255 255 / 11%);
+            }
+
+            100% {
+                top: -625px;
+                left: -831px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+        }
+
+        @keyframes letter-D-2-translating-after {
+            0% {
+                top: -122px;
+                left: -70px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            70% {
+                top: -122px;
+                left: -70px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            77% {
+                background-color: rgb(255 255 255 / 11%);
+            }
+            80% {
+                background-color: transparent;
+            }
+            100% {
+                top: -122px;
+                left: 312px;
+                background-color: transparent;
+            }
+        }
+
+        /* Letter R */
+
+        .letter_R:before {         
+            animation: letter-R-translating-before 2.8s ease-in;
+        }
+
+        .letter_R:after {
+            animation: letter-R-translating-after 3s ease-in;
+        }
+
+        @keyframes letter-R-translating-before {
+            0% {
+                top: -1062px;
+                left: -1302px;
+                background-color: #fff;
+            }
+
+            38% {
+                background-color: #fff;
+            }
+
+            47% {
+                background-color: rgb(255 255 255 / 11%);
+            }
+
+            100% {
+                top: -595px;
+                left: -831px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+        }
+
+        @keyframes letter-R-translating-after {
+            0% {
+                top: -158px;
+                left: -115px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            70% {
+                top: -158px;
+                left: -115px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            75% {
+                background-color: rgb(255 255 255 / 11%);
+            }
+            84% {
+                background-color: transparent;
+            }
+            100% {
+                top: 262px;
+                left: 210px;
+                background-color: transparent;
+            }
+        }
+
+        /* Letter I_2*/
+
+        .letter_I_2:before {
+            top: -472px;
+            left: -748px;
+            transform: rotate(90deg);
+            animation: letter-I-2-translating-before 2.5s ease-in;
+        }
+
+        .letter_I_2:after {
+            background-color: transparent;
+            top: -503px;
+            left: -440px;
+            animation: letter-I-2-translating-after 2.5s ease-in;
+        }
+
+        @keyframes letter-I-2-translating-before {
+            0% {
+                top: 104px;
+                left: -867px;
+            }
+
+            30% {
+                top: 104px;
+                left: -867px;
+            }
+
+            100% {
+                top: -472px;
+                left: -748px;
+            }
+        }
+
+        @keyframes letter-I-2-translating-after {
+            0% {
+                top: -158px;
+                left: -115px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            60% {
+                top: -158px;
+                left: -115px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            80% {
+                background-color: rgb(255 255 255 / 11%);
+            }
+            95% {
+                background-color: transparent;
+            }
+            100% {
+                top: -503px;
+                left: -440px;
+                background-color: transparent;
+            }
+        }
+
+        /* Letter V */
+
+        .letter_V:before {    
+            transform: rotate(120deg);
+            top: -510px;
+            left: -820px;     
+            animation: letter-V-translating-before 2.8s ease-in;
+        }
+
+        .letter_V:after {
+            transform: rotate(42deg);
+            top: 291px;
+            left: -444px;
+            background-color: transparent;
+            animation: letter-V-translating-after 3s ease-in;
+        }
+
+        @keyframes letter-V-translating-before {
+            0% {
+                top: -1147px;
+                left: -404px;
+            }
+
+            100% {
+                top: -510px;
+                left: -820px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+        }
+
+        @keyframes letter-V-translating-after {
+            0% {
+                top: -10px;
+                left: -132px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+
+            70% {
+                top: -10px;
+                left: -132px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+
+            100% {
+                top: 291px;
+                left: -444px;
+                background-color: transparent;
+            }
+        }
+
+        /* Letter D_2 */
+
+        .letter_E_2:before {  
+            transform: rotate(0deg);
+            top: -625px;
+            left: -831px;       
+            animation: letter-E-2-translating-before 2.8s ease-in;
+        }
+
+        .letter_E_2:after {
+            transform: rotate(0deg);
+            top: -122px;
+            left: 312px;
+            animation: letter-E-2-translating-after 3s ease-in;
+        }
+
+        @keyframes letter-E-2-translating-before {
+            0% {
+                top: -490px;
+                left: -1464px;
+                background-color: #fff;
+            }
+
+            38% {
+                top: -490px;
+                left: -1464px;
+                background-color: #fff;
+            }
+
+            47% {
+                background-color: rgb(255 255 255 / 11%);
+            }
+
+            100% {
+                top: -625px;
+                left: -831px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+        }
+
+        @keyframes letter-E-2-translating-after {
+            0% {
+                top: -122px;
+                left: -70px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            70% {
+                top: -122px;
+                left: -70px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            77% {
+                background-color: rgb(255 255 255 / 11%);
+            }
+            80% {
+                background-color: transparent;
+            }
+            100% {
+                top: -122px;
+                left: 312px;
+                background-color: transparent;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="loader-icon_block">
+        <img src="./assets/image/icons/loader-icon.svg" />
+    </div>
+    <div class="wrapper-word_blocks">
+        <div class="word_block">
+            <div class="letter-block letter_M">
+                <img src="./assets/image/icons/output-onlinepngtools.png"/>
+            </div>
+            <div class="letter-block letter_E">
+                <img src="./assets/image/icons/E.png"/>
+            </div>
+            <div class="letter-block letter_D">
+                <img src="./assets/image/icons/D.png"/>
+            </div>
+            <div class="letter-block letter_I">
+                <img src="./assets/image/icons/I.png"/>
+            </div>
+            <div class="letter-block letter_A">
+                <img src="./assets/image/icons/A.png"/>
+            </div>
+        </div>
+        <div class="word_block">
+            <div class="letter-block letter_D_2">
+                <img src="./assets/image/icons/D_2.png"/>
+            </div>
+            <div class="letter-block letter_R">
+                <img src="./assets/image/icons/R.png"/>
+            </div>
+            <div class="letter-block letter_I_2">
+                <img src="./assets/image/icons/I_2.png"/>
+            </div>
+            <div class="letter-block letter_V">
+                <img src="./assets/image/icons/V.png"/>
+            </div>
+            <div class="letter-block letter_E_2">
+                <img src="./assets/image/icons/E_2.png"/>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(window).on("load",function(){
+            $(".loader-icon_block").fadeOut("slow");
+        });
+    </script>
+</body>
+</html>
