@@ -1925,6 +1925,7 @@ main input[type='range']::-webkit-slider-thumb {
   min-height: 420px;
   border-radius: 8px;
   margin-bottom: 44px;
+  margin-top: 24px;
 }
 
 .page--content-text ul {
