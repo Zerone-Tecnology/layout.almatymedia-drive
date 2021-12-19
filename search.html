@@ -24,6 +24,59 @@
 			href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"
 		/>
 
+		<style>
+
+			.search--page .filter_search-block {
+				display: flex !important;
+				height: max-content;		
+			}
+
+			.search--page .filter_search-block .filter_search-inner-block {
+				height: 0px;
+				position: relative;
+				transition: height .4s;
+			}
+
+			.search--page .filter_search-block.open .filter_search-inner-block {
+				height: 500px;
+			}
+
+			.filter_search-block-title, 
+			.search--page .filter_search-block .row {
+				opacity: 0;
+				margin-left: -70px;
+				transition: all .4s;
+			}
+
+			.search--page .filter_search-block .filter_search-block-close-btn {
+				opacity: 0;
+				top: -40px;
+				transition: all .4s;
+			}
+
+			.form--search .filter_search-block-title.translateByX,
+			.search--page .filter_search-block .filter_search-inner-block .row.translateByX {
+				margin-left: 0px;
+				opacity: 1;
+			}
+
+			.search--page .filter_search-block .filter_search-block-close-btn.translateByX {
+				opacity: 1;
+				top: 0;
+			}
+
+			.search--page .filter_search-block-open-btn {
+				opacity: 1;
+				transition: all .4s;
+			}
+
+			.search--page .filter_search-block-open-btn.close_btn {
+				opacity: 0;
+				position: absolute;
+			}
+
+		</style>
+
 		<!-- Script -->
 		<script
 			src="./assets/js/lib/jquery/jquery-3.6.0.min.js"
@@ -321,84 +374,86 @@
 										</div>
 									</div>
 									<div class="row d-flex flex-column filter_search-block">
-										<button
-											type="button"
-											class="col-10 filter_search-block-close-btn close_btn"
-										>
-											Сбросить фильтры
-										</button>
-										<h4 class="filter_search-block-title">Фильтр поиска</h4>
-										<div class="row">
-											<div class="col-4">
-												<h5>Спецпроект</h5>
-												<div class="input--wrapper input--fbtn">
-													<input
-														type="text"
-														id="specproekt"
-														placeholder="Проект поэтапного перевода алфавита"
-													/>
-													<button type="" class="btn btn-icon mr-3">
-														<img
-															src="./assets/image/icons/icon-vector-down.svg"
-															alt=""
+										<div class="filter_search-inner-block">
+											<button
+												type="button"
+												class="col-10 filter_search-block-close-btn close_btn"
+											>
+												Сбросить фильтры
+											</button>
+											<h4 class="filter_search-block-title">Фильтр поиска</h4>
+											<div class="row">
+												<div class="col-4">
+													<h5>Спецпроект</h5>
+													<div class="input--wrapper input--fbtn">
+														<input
+															type="text"
+															id="specproekt"
+															placeholder="Проект поэтапного перевода алфавита"
 														/>
+														<button type="" class="btn btn-icon mr-3">
+															<img
+																src="./assets/image/icons/icon-vector-down.svg"
+																alt=""
+															/>
+														</button>
+													</div>
+												</div>
+												<div class="col">
+													<h5>Формат контента</h5>
+													<div class="row">
+														<div
+															class="form_radio input--wrapper input--fbtn radio"
+														>
+															<input
+																id="radio-1"
+																type="radio"
+																name="radio"
+																value="1"
+																checked
+															/>
+															<label for="radio-1">Фотография</label>
+														</div>
+														<div
+															class="form_radio input--wrapper input--fbtn radio"
+														>
+															<input
+																id="radio-2"
+																type="radio"
+																name="radio"
+																value="2"
+															/>
+															<label for="radio-2">Видео</label>
+														</div>
+														<div
+															class="form_radio input--wrapper input--fbtn radio"
+														>
+															<input
+																id="radio-3"
+																type="radio"
+																name="radio"
+																value="3"
+															/>
+															<label for="radio-3">Мероприятия</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-12">
+													<h5>Диапазон публикации</h5>
+												</div>
+												<div class="col-12 d-flex flex-row align-items-center">
+													<input type="text" id="amount-1" readonly />
+
+													<div id="slider-range"></div>
+
+													<input type="text" id="amount-2" readonly />
+
+													<button class="btn filter_search-block-send-btn">
+														Применить
 													</button>
 												</div>
-											</div>
-											<div class="col">
-												<h5>Формат контента</h5>
-												<div class="row">
-													<div
-														class="form_radio input--wrapper input--fbtn radio"
-													>
-														<input
-															id="radio-1"
-															type="radio"
-															name="radio"
-															value="1"
-															checked
-														/>
-														<label for="radio-1">Фотография</label>
-													</div>
-													<div
-														class="form_radio input--wrapper input--fbtn radio"
-													>
-														<input
-															id="radio-2"
-															type="radio"
-															name="radio"
-															value="2"
-														/>
-														<label for="radio-2">Видео</label>
-													</div>
-													<div
-														class="form_radio input--wrapper input--fbtn radio"
-													>
-														<input
-															id="radio-3"
-															type="radio"
-															name="radio"
-															value="3"
-														/>
-														<label for="radio-3">Мероприятия</label>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-12">
-												<h5>Диапазон публикации</h5>
-											</div>
-											<div class="col-12 d-flex flex-row align-items-center">
-												<input type="text" id="amount-1" readonly />
-
-												<div id="slider-range"></div>
-
-												<input type="text" id="amount-2" readonly />
-
-												<button class="btn filter_search-block-send-btn">
-													Применить
-												</button>
 											</div>
 										</div>
 									</div>

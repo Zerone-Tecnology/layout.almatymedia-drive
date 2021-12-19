@@ -55,16 +55,19 @@ $(document).ready(function () {
 
         $('.open_btn, .filter_search-block-open-btn').click(function () {
             $('.open_btn').toggleClass('close');
-            $('.filter_search-block-open-btn').toggleClass('close');
+            $('.filter_search-block-open-btn').toggleClass('close_btn');
             $('.filter--block_open').toggleClass('open');
             $('.filter_search-block').toggleClass('open');
+            $('.filter_search-block-title, .filter_search-inner-block .row, .filter_search-inner-block .filter_search-block-close-btn').toggleClass('translateByX');
         });
         $('.filter--block_open, .filter_search-block-close-btn').click(
             function () {
                 $('.open_btn').toggleClass('close');
-                $('.filter_search-block-open-btn').toggleClass('close');
+                $('.filter_search-block-open-btn').toggleClass('close_btn');
                 $('.filter--block_open').toggleClass('open');
                 $('.filter_search-block').toggleClass('open');
+                $('.filter_search-block-title').toggleClass('translateByX');
+                $('.filter_search-inner-block .row, .filter_search-inner-block .row, .filter_search-inner-block .filter_search-block-close-btn').toggleClass('translateByX');
             }
         );
     }

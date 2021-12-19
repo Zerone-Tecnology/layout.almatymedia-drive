@@ -27,7 +27,376 @@
 			sync
 		></script>
 		<script src="./assets/js/lib/anime/anime.min.js" module sync></script>
-		<style></style>
+		<style>
+
+
+        /* Animation section-direction */
+
+		.section-direction .card--item-image svg path:nth-of-type(1):before {
+            content: '';
+            position: absolute;
+            /* width: 646px; */
+            width: 997px;
+            height: 465px;
+            border-radius: 49%;
+            border: 460px solid #fff;
+            transform: rotate(45deg);
+            top: -595px;
+            left: -831px;
+            background: transparent;
+            z-index: 1;
+            
+        }
+
+        .section-direction .card--item-image svg path:nth-of-type(1):after {
+            content: '';
+            position: absolute;
+            width: 725px;
+            height: 500px;
+            border-radius: 55%;
+            transform: rotate(-45deg);
+            top: 262px;
+            left: 210px;
+            background-color: rgb(255 255 255 / 11%);
+            z-index: 1;
+        }
+
+		.section-direction .card--item-image svg path:nth-of-type(1):before {  
+            transform: rotate(0deg);
+            top: -625px;
+            left: -831px;       
+            animation: letter-D-2-translating-before 2.8s ease-in;
+        }
+
+        .section-direction .card--item-image svg path:nth-of-type(1):after {
+            transform: rotate(0deg);
+            top: -122px;
+            left: 312px;
+            animation: letter-D-2-translating-after 3s ease-in;
+        }
+
+        @keyframes letter-D-2-translating-before {
+            0% {
+                top: -490px;
+                left: -1464px;
+                background-color: #fff;
+            }
+
+            38% {
+                background-color: #fff;
+            }
+
+            47% {
+                background-color: rgb(255 255 255 / 11%);
+            }
+
+            100% {
+                top: -625px;
+                left: -831px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+        }
+
+        @keyframes letter-D-2-translating-after {
+            0% {
+                top: -122px;
+                left: -70px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            70% {
+                top: -122px;
+                left: -70px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+            77% {
+                background-color: rgb(255 255 255 / 11%);
+            }
+            80% {
+                background-color: transparent;
+            }
+            100% {
+                top: -122px;
+                left: 312px;
+                background-color: transparent;
+            }
+        }
+			
+		/* Animation section-media */
+
+		.section-media .card--item-image {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.section-media .animation-circle {
+			content: '';
+			height: 1200px;
+			width: 800px;
+			/* top: -820px;
+    		left: -235px; */
+			top: -990px;
+    		left: -265px;
+			position: absolute;
+			border: 200px solid #ffffff00;
+			background-color: transparent;
+			border-radius:50%;
+			transform: rotate(-15deg);
+			z-index: 10;
+			animation: translating-circle .81s ease-in;
+		}
+
+		.section-media .animation-inner-circle {
+			content: '';
+			height: 765px;
+			width: 354px;
+			top: 34px;
+			left: 35px;
+			position: absolute;
+			transform: rotate(5deg);
+			background-color: #ffffff00;
+			border-radius:50%;
+			animation: translating-inner-circle .81s ease-in;
+			z-index: 9;
+		}
+
+		.section-media svg {
+			opacity: 1;
+			animation: visible-svg .81s ease-in;;
+		}
+
+		.section-media .card--item-info {
+			left: -55px;
+		}
+
+		.section-media .my-auto .nav--title,
+		.section-media .my-auto .nav--item .nav--link {
+			margin-left: -55px;
+		}
+
+		
+
+		@keyframes translating-circle {
+			0% {
+				top: -120px;
+    			left: -170px;
+				border: 200px solid #ffffff2e;
+			}
+
+			100% {
+				top: -820px;
+    			left: -200px;
+				border: 200px solid #ffffff00;
+			}
+		}
+		@keyframes translating-inner-circle {
+			0% {
+				background-color: #ffffff2e;
+			}
+
+			100% {
+				background-color: #ffffff00;
+			}
+		}
+
+		@keyframes visible-svg {
+			0% {
+				opacity: 0;
+			}
+
+			60% {
+				opacity: 1;
+			}
+		}
+
+		/* Animation section-project */
+
+		.section-project .card--item-image {
+			position: relative;
+			overflow: hidden;
+		}
+
+		
+
+		@media (min-width:1411px) {
+			.section-project .card--item-image div {
+				position: absolute;
+				height: 380px;
+				width: 380px;
+				left: 202px;
+    			top: -360px;
+				border-radius: 50%;
+				background-color: #ffffff00;
+				animation: translating-radius 0.55s ease-in;
+			}
+			.section-project .card--item-image:before, .section-project .card--item-image:after {
+				content: '';
+				height: 1000px;
+				width: 243px;
+				position: absolute;
+				background-color: #ffffff00;
+				border-radius: 94px;
+				
+			}
+
+			.section-project .card--item-image:before {
+				transform: rotate(4deg);
+				left: -55px;
+				top: -526px;
+				animation: translating-before .55s ease-in;
+			}
+
+			.section-project .card--item-image:after {
+				transform: rotate(30deg);
+				left: 459px;
+    			top: -370px;
+				animation: translating-after .55s ease-in;
+			}
+
+			@keyframes translating-radius {
+				0% {
+					left: 0px;
+					top: 371px;
+					background-color: #ffffff2e;
+				}
+
+				/* 40% {
+					background-color: #ffffff2e;
+				} */
+
+				100% {
+					left: 202px;
+    				top: -360px;
+					background-color: #ffffff00;
+				}
+			}
+
+			@keyframes translating-before {
+				0% {
+					left: -253px;
+   					top: 172px;
+					background-color: #ffffff2e;
+				}
+
+				/* 40% {
+					background-color: #ffffff2e;
+				} */
+
+				100% {
+					left: -55px;
+    				top: -526px;
+					background-color: #ffffff00;
+				}
+			}
+
+			@keyframes translating-after {
+				0% {
+					left: 256px;
+					top: 360px;
+					background-color: #ffffff2e;
+				}
+
+				/* 40% {
+					background-color: #ffffff2e;
+				} */
+
+				100% {
+					/* left: 395px;
+					top: -182px; */
+					left: 459px;
+    				top: -370px;
+					background-color: #ffffff00;
+				}
+			}
+		}
+
+
+		/* Animation section-activity */
+
+		.section-activity .card--item-image {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.section-activity .card--item-image:before {
+            content: '';
+            position: absolute;
+            width: 2490px;
+            height: 1571px;
+            border-radius: 49%;
+            border: 473px solid #fcfcfc;
+            transform: rotate(45deg);
+            background: transparent;
+            z-index: 1;
+            
+        }
+
+        .section-activity .card--item-image:after {
+            content: '';
+            position: absolute;
+            width: 725px;
+            height: 500px;
+            border-radius: 55%;
+            transform: rotate(-45deg);
+            top: 262px;
+            left: 210px;
+            background-color: rgb(255 255 255 / 11%);
+            z-index: 1;
+        }
+
+
+		.section-activity .card--item-image:before {    
+			transform: rotate(136deg);
+			top: -940px;
+    		left: -721px;
+            animation: section-activity-translating-before .45s ease-in;
+        }
+
+        .section-activity .card--item-image:after {
+            transform: rotate(42deg);
+            top: 291px;
+            left: -444px;
+            background-color: transparent;
+            animation: section-activity-translating-after .75s ease-in;
+        }
+
+        @keyframes section-activity-translating-before {
+            0% {
+				top: -1360px;
+				left: -355px;
+				border: 408px solid #fcfcfc;
+            }
+
+            100% {
+				top: -940px;
+    			left: -721px;
+            }
+        }
+
+        @keyframes section-activity-translating-after {
+            0% {
+                top: -10px;
+                left: -132px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+
+            70% {
+                top: -10px;
+                left: -132px;
+                background-color: rgb(255 255 255 / 11%);
+            }
+
+            100% {
+                top: 291px;
+                left: -444px;
+                background-color: transparent;
+            }
+        }
+
+
+		/* End animation styles */
+
+
+		</style>
 	</head>
 	<body>
 		<!-- main -->
@@ -585,6 +954,10 @@
 						<div class="col-4">
 							<div class="card--item d-flex flex-column">
 								<div class="card--item-image">
+									<div class="animation-circle">
+										<div class="animation-inner-circle">
+										</div>
+									</div>
 									<svg
 										height="338"
 										width="450"
@@ -666,6 +1039,10 @@
 						<div class="col-4">
 							<div class="card--item d-flex flex-column">
 								<div class="card--item-image">
+									<div class="animation-circle">
+										<div class="animation-inner-circle">
+										</div>
+									</div>
 									<svg
 										height="338"
 										width="450"
@@ -747,6 +1124,10 @@
 						<div class="col-4">
 							<div class="card--item d-flex flex-column">
 								<div class="card--item-image">
+									<div class="animation-circle">
+										<div class="animation-inner-circle">
+										</div>
+									</div>
 									<svg
 										height="338"
 										width="450"
@@ -826,6 +1207,10 @@
 						<div class="col-4">
 							<div class="card--item d-flex flex-column">
 								<div class="card--item-image">
+									<div class="animation-circle">
+										<div class="animation-inner-circle">
+										</div>
+									</div>
 									<svg
 										height="338"
 										width="450"
@@ -905,6 +1290,10 @@
 						<div class="col-4">
 							<div class="card--item d-flex flex-column">
 								<div class="card--item-image">
+									<div class="animation-circle">
+										<div class="animation-inner-circle">
+										</div>
+									</div>
 									<svg
 										height="338"
 										width="450"
@@ -1203,6 +1592,7 @@
 						<div class="col-4">
 							<div class="card--item d-flex flex-column">
 								<div class="card--item-image">
+									<div></div>
 									<svg
 										width="445"
 										height="471"
@@ -1277,6 +1667,7 @@
 						<div class="col-4">
 							<div class="card--item d-flex flex-column">
 								<div class="card--item-image">
+									<div></div>
 									<svg
 										width="445"
 										height="471"
@@ -1351,6 +1742,7 @@
 						<div class="col-4">
 							<div class="card--item d-flex flex-column">
 								<div class="card--item-image">
+									<div></div>
 									<svg
 										width="445"
 										height="471"
@@ -1856,5 +2248,31 @@
 
 		<!-- Scripts -->
 		<script src="./assets/js/common.js" sync></script>
+		<script>
+			anime({
+				targets: '.section-media .card--item-info',
+				left: '0px',
+				easing: 'easeInOutQuad',
+				dutation: 810
+			});
+			anime({
+				targets: '.section-media .my-auto .nav--title',
+				marginLeft: '0px',
+				easing: 'easeInOutQuad',
+				dutation: 810
+			});
+			anime({
+				targets: '.section-media .my-auto .nav--item .nav--link',
+				marginLeft: '0px',
+				easing: 'easeInOutQuad',
+				dutation: 780
+			});
+			anime({
+				targets: '.section-media .my-auto .nav--item .nav--link.active',
+				marginLeft: '0px',
+				easing: 'easeInOutQuad',
+				dutation: 800
+			});
+		</script>
 	</body>
 </html>
